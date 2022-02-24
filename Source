@@ -387,6 +387,7 @@ end
 if isfile then
 	if not isfile("Nugzy.lua") then
 		Stand("Looks like you're new here!","To view commands, use .commands","You can use different stuff like .hotkeys","","Join the discord if you need any help using the script, false tickets will result in a ban.","Okay",true)
+		repeat wait() until RunDude == true
 
 	end
 end
@@ -798,7 +799,7 @@ if AntiCheat.OneTimeScramble then
 	Unnamed.Name = math.random(1,100000)
 end
 
-local AudioIds = {5032588119}
+local AudioIds = {}
 
 if AntiCheat.IntroAudioOff == false then
 	local Sound2 = Instance.new("Sound", nil)

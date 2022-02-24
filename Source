@@ -799,7 +799,7 @@ if AntiCheat.OneTimeScramble then
 	Unnamed.Name = math.random(1,100000)
 end
 
-local AudioIds = {}
+local AudioIds = {5032588119}
 
 if AntiCheat.IntroAudioOff == false then
 	local Sound2 = Instance.new("Sound", nil)
@@ -809,7 +809,8 @@ if AntiCheat.IntroAudioOff == false then
 	for i,v in pairs(c) do v:Enable() end
 	Sound2.Name = "19324854"
 	Sound2.SoundId = "http://www.roblox.com/asset/?id="..AudioIds[1]
-	Sound2:Play()
+	
+	
 end
 
 holder = Instance.new("Frame", getParent)

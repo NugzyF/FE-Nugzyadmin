@@ -448,7 +448,7 @@ local Tier = {
 		SCHAT = "EX-TOP"
 	},
 	["Custom5"] = {
-		Tag = "OprahBrah2",
+		Tag = "DuBz_Bubby",
 		Color = "RGBDev",
 		SCHAT = "Owner"
 	},

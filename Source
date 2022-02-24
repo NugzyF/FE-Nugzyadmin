@@ -12525,7 +12525,7 @@ function useCommand.credits()
 	opx("-","Opened credits")
 	opxL("Credits","Note: Some discords may be out of date due to consistent changing;\
 	Owner - "..
-	DdevCords[1].."\
+	DevCords[1].."\
 	Dev - "..DevCords[1].."\
 	Former Founder - pigeon\
 	Thank you to IY for some functions inside CMD-X\

@@ -12526,10 +12526,7 @@ function useCommand.credits()
 	opxL("Credits","Note: Some discords may be out of date due to consistent changing;\
 	Owner - "..DevCords[1].."\
 	Dev - "..DevCords[2].."\
-	Former Founder - pigeon\
-	Thank you to IY for some functions inside CMD-X\
-	Thank you to Bannable#5005 for animpack\
-	Thank you to 6033#6033 for old-aimbot")
+	Former Founder - NugzyF\
 end
 
 function useCommand.outputlarger()

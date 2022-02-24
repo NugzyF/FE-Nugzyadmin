@@ -471,7 +471,7 @@ local Tier = {
 
 function loaddefaults()
 	text2 = false
-	hotkeyopen = '`'
+	hotkeyopen = 'q'
 	hotkeyfocus = ';'
 	hotkeyfly = ''
 	hotkeyxray = ''

@@ -7,7 +7,7 @@ local cordCode = "Modified by Nugzy"
 Parents = {[1] = game:GetService("CoreGui"):FindFirstChild("RobloxGui"), [2] = game:GetService("CoreGui"), [3] = game:GetService("Players").LocalPlayer.PlayerGui}
 if Parents[1] then
 	getParent = Parents[1]
-else
+elseG
 	getParent = Parents[2]
 end
 if PROTOSMASHER_LOADED and get_hidden_gui then getParent = get_hidden_gui() end
@@ -387,7 +387,7 @@ end
 if isfile then
 	if not isfile("Nugzy.lua") then
 		Stand("Looks like you're new here!","To view commands, use .commands","You can use different stuff like .hotkeys","","Join the discord if you need any help using the script, false tickets will result in a ban.","Okay",true)
-		repeat wait() until RunDude == true
+
 	end
 end
 --repeat wait() until RunDude == true
@@ -402,7 +402,6 @@ local cmdvu = game:GetService("VirtualUser")
 local cmduis = game:GetService("UserInputService")
 local Mouses = cmdlp:GetMouse()
 cmdm = Mouses
--- we dont have this many owners just alts
 local Devs = {
 	["OprahBrah2"] = "Owner",
 }

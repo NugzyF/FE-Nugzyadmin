@@ -2551,7 +2551,7 @@ CMDS.commands = {
 	["hamsterball"] = "check it out lol",
 	["invisible2"] = "Another invisible method",
 	["uninvisible2"] = "Disable invisible2",
-	["visiblw2"] = "Disable invisible2",
+	["visible2"] = "Disable invisible2",
 }
 CMDS.usage = {
 	["hamsterball"] = "(meh)",

@@ -2604,6 +2604,8 @@ CMDS.commands = {
 	["alias"] = "Creates a custom alias for a command (can not replace commands)",
 	["delalias"] = "Removes a custom alias",
 	["aliases"] = "Lists custom aliases",
+	["god"] = "makes yourself invincible" , 
+	["ungod"] = "Disable god",
 }
 CMDS.usage = {
 	["promptnew"] = "(str/name)",
@@ -3394,6 +3396,8 @@ CMDS.aliases = {
 	["ctrltplimit"] = "clicktplimit",
 	["unctrltplimit"] = "unclicktplimit",
 	["headsit"] = "piggyback",
+	["god"] = "makes yourself invincible",
+	["ungod"] = "Disable god",
 }
 
 local function suggestions_update()
@@ -13718,6 +13722,30 @@ function useCommand.copyoutput()
 		setclipboard(output1.Text)
 		opx("-","Copied latest output")
 	end
+end
+
+function useCommand.god(args, speaker)
+	local Cam = workspace.CurrentCamera
+	local Pos, Char = Cam.CFrame, speaker.Character
+	local Human = Char and Char.FindFirstChildWhichIsA(Char, "Humanoid")
+	local nHuman = Human.Clone(Human)
+	nHuman.Parent, speaker.Character = Char, nil
+	nHuman.SetStateEnabled(nHuman, 15, false)
+	nHuman.SetStateEnabled(nHuman, 1, false)
+	nHuman.SetStateEnabled(nHuman, 0, false)
+	nHuman.BreakJointsOnDeath, Human = true, Human.Destroy(Human)
+	speaker.Character, Cam.CameraSubject, Cam.CFrame = Char, nHuman, wait() and Pos
+	nHuman.DisplayDistanceType = Enum.HumanoidDisplayDistanceType.None
+	local Script = Char.FindFirstChild(Char, "Animate")
+	if Script then
+		Script.Disabled = true
+		wait()
+	end
+	nHuman.Health = nHuman.MaxHealth
+	function useCommand.ungod()
+		Script.Disabled = false
+	end
+
 end
 
 function useCommand.copypath()

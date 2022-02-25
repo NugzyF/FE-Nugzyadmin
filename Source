@@ -1,10 +1,9 @@
-
+---------------------------------------|
 while not game:IsLoaded() or not game:GetService("CoreGui") or not game:GetService("Players").LocalPlayer or not game:GetService("Players").LocalPlayer.PlayerGui do wait() end
-
+-- Constraints: -----------------------|
 local ver = "1.0"
-
-local cordCode = "https://discord.gg/gBW8tYCbrT"
-
+local cordCode = "https://discord.gg/m5RahRqt3G"
+---------------------------------------|
 Parents = {[1] = game:GetService("CoreGui"):FindFirstChild("RobloxGui"), [2] = game:GetService("CoreGui"), [3] = game:GetService("Players").LocalPlayer.PlayerGui}
 if Parents[1] then
 	getParent = Parents[1]
@@ -245,7 +244,7 @@ function Stand(Text1,Text2,Text3,Text4,Text5,Text6,Btn)
 	LoadingFrame.Name = "LoadingFrame"
 	LoadingFrame.Parent = Unnamed
 	LoadingFrame.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
-	LoadingFrame.BackgroundTransparency = 0.100
+	LoadingFrame.BackgroundTransparency = 0.200
 	LoadingFrame.Position = UDim2.new(-9.31322575e-10, 0, -0.101388887, 0)
 	LoadingFrame.Size = UDim2.new(1, 0, 1.20000005, 0)
 
@@ -406,66 +405,15 @@ cmdm = Mouses
 -- we dont have this many owners just alts
 local Devs = {
 	["OprahBrah2"] = "Owner",
-	[""] = "Owner",
-	[""] = "Owner",
-	[""] = "Owner",
-	[""] = "Owner",
-	["OprahBrah2"] = "Dev",
 }
 
 DevCords = {
 	"Nugzy#5731";
-	"Nugzy#5731";
+    "F1reworks#1021";
 }
 
 local Donors = {
-	["8avu"] = "1",
-	["0ccoy"] = "1",
-	["Zuhqu"] = "1",
-	["NitoOV"] = "1",
-	["LtsDank"] = "1",
-	["614SHAD"] = "1",
-	["tyswrld"] = "1",
-	["teejay6x"] = "1",
-	["Yarhibol"] = "1",
-	["Schewpid"] = "1",
-	["goresyard"] = "1",
-	["HyperLink3"] = "1",
-	["OFFTheBatter"] = "1",
-	["DisturbedCult"] = "1",
-	["hellavzn"] = "1",
-	["DAMAGlNG"] = "1",
-	["Zukkoe"] = "1",
-	["Missingno74"] = "1",
-	["HelIaSketchers"] = "1",
-	["amazinggeorgedude"] = "1",
-	["TheBlankProdigy"] = "1",
-	["cxpoxxo"] = "1",
-	["reseiz"] = "1",
-	["M3tamophosis"] = "1",
-	["vsize"] = "1",
-	["guest863325"] = "1",
-	["xuyed"] = "1",
-
-	["8dqt"] = "2",
-	["skrask"] = "2",
-	["xniped"] = "2",
-	["KinggSeaa"] = "2",
-	["ClydeGrant"] = "2",
-	["Fxalling_Love"] = "2",
-	["emovert"] = "2",
-	["shifde"] = "2",
-	["RusskiSlavv"] = "2",
-	["xudet"] = "2",
-	
-	["overreaction"] = "Custom1",
-	["InternetSpeeds"] = "Custom2",
-	["TheChosenOne123"] = "Custom3",
-	["Irritatory"] = "Custom4",
-	["DuBz_Bubby"] = "Custom5", -- top donor {$200}
-	["YanniLove"] = "Custom6",
-	["painteatr"] = "Custom7",
-	["VII"] = "Custom8",
+	["OprahBrah2"] = "Custom5", -- top donor {$200}
 }
 
 local Tier = {
@@ -500,9 +448,9 @@ local Tier = {
 		SCHAT = "EX-TOP"
 	},
 	["Custom5"] = {
-		Tag = "DuBz_Bubby",
+		Tag = "OprahBrah2",
 		Color = "RGBDev",
-		SCHAT = "TOP DONOR"
+		SCHAT = "Owner"
 	},
 	["Custom6"] = {
 		Tag = "Classy Cute",
@@ -519,11 +467,6 @@ local Tier = {
 		Color = Color3.fromRGB(255,0,0),
 		SCHAT = "7"
 	},
-    ["Custom9"] = {
-        tag = "OprahBrah2",
-        color = "RGBDev",
-        SCHAT = "Owner"
-    },
 }
 
 function loaddefaults()
@@ -1198,7 +1141,7 @@ output4.TextSize = 16
 output4.TextXAlignment = Enum.TextXAlignment.Left
 output4.TextWrapped = true
 output4.TextTruncate = Enum.TextTruncate.AtEnd
-local Hints = {"You can find commands using 'cmds'.","You can change your prefix by doing 'prefixnew (key)'"}
+local Hints = {"Did you know you can execute multiple commands with ';;'?","Did you know you can create a wait using timedcmd in loops?"}
 output4.Text = Hints[math.random(1,#Hints)]
 
 output5.Name = "output5"
@@ -1282,7 +1225,6 @@ function sFLY(vfly)
 	local CONTROL = {F = 0, B = 0, L = 0, R = 0, Q = 0, E = 0}
 	local lCONTROL = {F = 0, B = 0, L = 0, R = 0, Q = 0, E = 0}
 	local SPEED = 0
-
 	local function FLY()
 		FLYING = true
 		local BG = Instance.new('BodyGyro', T)
@@ -1403,7 +1345,7 @@ opxviewertitle.BackgroundTransparency = 1
 opxviewertitle.Position = UDim2.new(0.264150947, 0, 0, 0)
 opxviewertitle.Size = UDim2.new(0, 200, 0, 22)
 opxviewertitle.Font = Enum.Font.GothamBold
-opxviewertitle.Text = "CMD-X OUTPUT-LONGER"
+opxviewertitle.Text = "NugzyCMD OUTPUT-LONGER"
 opxviewertitle.TextColor3 = Color3.new(1, 1, 1)
 opxviewertitle.TextSize = 14
 
@@ -1948,7 +1890,6 @@ end
 
 local CMDS = {}
 CMDS.commands = {
-	["invisible2"] = "another invisible method",
 	["prefix"] = "Shows you the chat prefix.",
 	["promptnew"] = "Changes your prompt text to something else.",
 	["prefixnew"] = "Changes chat prefix.",
@@ -2254,7 +2195,7 @@ CMDS.commands = {
 	["bring"] = "Brings the player to you (NEED A HAT AND TOOL).",
 	["kill"] = "Kills the player (NEED A HAT AND TOOL).",
 	["give"] = "Gives the player your tool.",
-	["using"] = "Specifies that you are using NugzyCMD (In chat). <3",
+	["using"] = "Specifies that you are using NugzyCMD. <3",
 	["playercases"] = "Lists player cases you can use in your second argument.",
 	["coronavirus"] = "Provides information about coronavirus using an API.",
 	["joindateprivate"] = "Shows players join date privately.",
@@ -2468,7 +2409,7 @@ CMDS.commands = {
 	["rejoinrefresh"] = "Rejoins and places you back at the spot you were at.",
 	["backpackplay"] = "Loop plays plrs audio to stop muting.",
 	["unbackpackplay"] = "()",
-	["migratesaves"] = "Migrates save files/backups to NugzyCMD.lua.",
+	["migratesaves"] = "Migrates save files/backups to  NugzyCMD.lua.",
 	["resetguipos"] = "Resets GUI position.",
 	["loopfling"] = "Loop flings player.",
 	["unloopfling"] = "()",
@@ -2606,19 +2547,8 @@ CMDS.commands = {
 	["alias"] = "Creates a custom alias for a command (can not replace commands)",
 	["delalias"] = "Removes a custom alias",
 	["aliases"] = "Lists custom aliases",
-	["god"] = "makes yourself invincible" , 
-	["ungod"] = "Disable god",
-	["amogus"] = "SUS",
-	["blackhole"] = "grab unanchored Stuff",
-	["earrape2"] = "play all the saunds at the same time , other method",
-	["skateboard"] = "SpawnASakteboard",
 }
 CMDS.usage = {
-	["skateboard"] = "meh",
-	["earrape2"] = "meh",
-	["blackhole"] = "meh",
-	["invisible2"] = "use E to toggle",
-	["amogus"] = "sus",
 	["promptnew"] = "(str/name)",
 	["prefixnew"] = "(str)",
 	["hotkeyopen"] = "(str)",
@@ -3407,8 +3337,6 @@ CMDS.aliases = {
 	["ctrltplimit"] = "clicktplimit",
 	["unctrltplimit"] = "unclicktplimit",
 	["headsit"] = "piggyback",
-	["god"] = "makes yourself invincible",
-	["ungod"] = "Disable god",
 }
 
 local function suggestions_update()
@@ -3451,7 +3379,7 @@ end
 task.spawn(suggestions_update)
 
 if KeepCMDXOn and syn.queue_on_teleport then
-	syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/Source"))()')
+	syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyCMD/FE-Nugzyadmin/master/source"))()')
 end
 
 rejoining = false
@@ -4226,7 +4154,7 @@ ManageTitleEnter.BackgroundTransparency = 1.000
 ManageTitleEnter.Position = UDim2.new(0.263266504, 0, 0.00765306223, 0)
 ManageTitleEnter.Size = UDim2.new(0, 200, 0, 32)
 ManageTitleEnter.Font = Enum.Font.GothamSemibold
-ManageTitleEnter.Text = "CMD-X - EnterCMDS - Prompt "
+ManageTitleEnter.Text = "NugzyCMD EnterCMDs MANAGER"
 ManageTitleEnter.TextColor3 = Color3.fromRGB(255, 255, 255)
 ManageTitleEnter.TextSize = 14.000
 
@@ -4247,7 +4175,7 @@ Edit1Enter.Position = UDim2.new(0.0325581394, 0, 0.0850340128, 0)
 Edit1Enter.Size = UDim2.new(0, 200, 0, 26)
 Edit1Enter.Font = Enum.Font.Gotham
 Edit1Enter.PlaceholderColor3 = Color3.fromRGB(230, 230, 230)
-Edit1Enter.PlaceholderText = "Enter commands or gay"
+Edit1Enter.PlaceholderText = "Enter command here"
 Edit1Enter.Text = ""
 Edit1Enter.TextColor3 = Color3.fromRGB(255, 255, 255)
 Edit1Enter.TextSize = 14.000
@@ -4511,16 +4439,16 @@ function useCommand.advertise()
 		local randomPlayer = cmdp:GetPlayers()[math.random(2,#cmdp:GetPlayers())]
 		cmdlp.Character.Humanoid:MoveTo(randomPlayer.Character.HumanoidRootPart.Position)
 	end
-	opx("-","Now advertising NugzyCMD (Thank you!)")
+	opx("-","Now advertising Nugzy CMD (Thank you!)")
 end
 
 function useCommand.unadvertise()
 	cmdAdvertise = false
-	opx("-","Stopped advertising NugzyCMD (Thank you!)")
+	opx("-","Stopped advertising Nugzy CMD (Thank you!)")
 end
 
 function useCommand.version()
-	opx("-","NugzyCMD is currently on "..ver)
+	opx("-","Nugzy CMD is currently on "..ver)
 end
 
 function useCommand.maxslopeangle()
@@ -4576,159 +4504,6 @@ function useCommand.hipheight()
 		cmdlp.Character.Humanoid.HipHeight = permhipheight
 		opx("*","Hipheight set to "..permhipheight)
 	end
-end
-
-function useCommand.invisible2()
-
-	--Settings:
-local ScriptStarted = false
-local Keybind = "E" --Set to whatever you want, has to be the name of a KeyCode Enum.
-local Transparency = true --Will make you slightly transparent when you are invisible. No reason to disable.
-local NoClip = false --Will make your fake character no clip.
-
-local Player = game:GetService("Players").LocalPlayer
-local RealCharacter = Player.Character or Player.CharacterAdded:Wait()
-
-local IsInvisible = false
-
-RealCharacter.Archivable = true
-local FakeCharacter = RealCharacter:Clone()
-local Part
-Part = Instance.new("Part", workspace)
-Part.Anchored = true
-Part.Size = Vector3.new(200, 1, 200)
-Part.CFrame = CFrame.new(0, -500, 0) --Set this to whatever you want, just far away from the map.
-Part.CanCollide = true
-FakeCharacter.Parent = workspace
-FakeCharacter.HumanoidRootPart.CFrame = Part.CFrame * CFrame.new(0, 5, 0)
-
-for i, v in pairs(RealCharacter:GetChildren()) do
-  if v:IsA("LocalScript") then
-      local clone = v:Clone()
-      clone.Disabled = true
-      clone.Parent = FakeCharacter
-  end
-end
-if Transparency then
-  for i, v in pairs(FakeCharacter:GetDescendants()) do
-      if v:IsA("BasePart") then
-          v.Transparency = 0.7
-      end
-  end
-end
-local CanInvis = true
-function RealCharacterDied()
-  CanInvis = false
-  RealCharacter:Destroy()
-  RealCharacter = Player.Character
-  CanInvis = true
-  isinvisible = false
-  FakeCharacter:Destroy()
-  workspace.CurrentCamera.CameraSubject = RealCharacter.Humanoid
-
-  RealCharacter.Archivable = true
-  FakeCharacter = RealCharacter:Clone()
-  Part:Destroy()
-  Part = Instance.new("Part", workspace)
-  Part.Anchored = true
-  Part.Size = Vector3.new(200, 1, 200)
-  Part.CFrame = CFrame.new(9999, 9999, 9999) --Set this to whatever you want, just far away from the map.
-  Part.CanCollide = true
-  FakeCharacter.Parent = workspace
-  FakeCharacter.HumanoidRootPart.CFrame = Part.CFrame * CFrame.new(0, 5, 0)
-
-  for i, v in pairs(RealCharacter:GetChildren()) do
-      if v:IsA("LocalScript") then
-          local clone = v:Clone()
-          clone.Disabled = true
-          clone.Parent = FakeCharacter
-      end
-  end
-  if Transparency then
-      for i, v in pairs(FakeCharacter:GetDescendants()) do
-          if v:IsA("BasePart") then
-              v.Transparency = 0.7
-          end
-      end
-  end
- RealCharacter.Humanoid.Died:Connect(function()
- RealCharacter:Destroy()
- FakeCharacter:Destroy()
- end)
- Player.CharacterAppearanceLoaded:Connect(RealCharacterDied)
-end
-RealCharacter.Humanoid.Died:Connect(function()
- RealCharacter:Destroy()
- FakeCharacter:Destroy()
- end)
-Player.CharacterAppearanceLoaded:Connect(RealCharacterDied)
-local PseudoAnchor
-game:GetService "RunService".RenderStepped:Connect(
-  function()
-      if PseudoAnchor ~= nil then
-          PseudoAnchor.CFrame = Part.CFrame * CFrame.new(0, 5, 0)
-      end
-       if NoClip then
-      FakeCharacter.Humanoid:ChangeState(11)
-       end
-  end
-)
-
-PseudoAnchor = FakeCharacter.HumanoidRootPart
-local function Invisible()
-  if IsInvisible == false then
-      local StoredCF = RealCharacter.HumanoidRootPart.CFrame
-      RealCharacter.HumanoidRootPart.CFrame = FakeCharacter.HumanoidRootPart.CFrame
-      FakeCharacter.HumanoidRootPart.CFrame = StoredCF
-      RealCharacter.Humanoid:UnequipTools()
-      Player.Character = FakeCharacter
-      workspace.CurrentCamera.CameraSubject = FakeCharacter.Humanoid
-      PseudoAnchor = RealCharacter.HumanoidRootPart
-      for i, v in pairs(FakeCharacter:GetChildren()) do
-          if v:IsA("LocalScript") then
-              v.Disabled = false
-          end
-      end
-
-      IsInvisible = true
-  else
-      local StoredCF = FakeCharacter.HumanoidRootPart.CFrame
-      FakeCharacter.HumanoidRootPart.CFrame = RealCharacter.HumanoidRootPart.CFrame
-     
-      RealCharacter.HumanoidRootPart.CFrame = StoredCF
-     
-      FakeCharacter.Humanoid:UnequipTools()
-      Player.Character = RealCharacter
-      workspace.CurrentCamera.CameraSubject = RealCharacter.Humanoid
-      PseudoAnchor = FakeCharacter.HumanoidRootPart
-      for i, v in pairs(FakeCharacter:GetChildren()) do
-          if v:IsA("LocalScript") then
-              v.Disabled = true
-          end
-      end
-      IsInvisible = false
-  end
-end
-
-game:GetService("UserInputService").InputBegan:Connect(
-  function(key, gamep)
-      if gamep then
-          return
-      end
-      if key.KeyCode.Name:lower() == Keybind:lower() and CanInvis and RealCharacter and FakeCharacter then
-          if RealCharacter:FindFirstChild("HumanoidRootPart") and FakeCharacter:FindFirstChild("HumanoidRootPart") then
-              Invisible()
-          end
-      end
-  end
-)
-local Sound = Instance.new("Sound",game:GetService("SoundService"))
-Sound.SoundId = "rbxassetid://232127604"
-Sound:Play()
-game:GetService("StarterGui"):SetCore("SendNotification",{["Title"] = "Invisible Toggle Loaded",["Text"] = "Press "..Keybind.." to become change visibility.",["Duration"] = 20,["Button1"] = "Okay."})
-
-opx("*","Use E to toggle and untoggle")
-
 end
 
 function useCommand.defaulthipheight()
@@ -4813,7 +4588,6 @@ function useCommand.removehands()
 		cmdlp.Character.LeftHand:Destroy()
 	else
 		opx("*","You need to be R15 for this command!")
-        opx("*","Join discord if you dont know what this is!")
 	end
 end
 
@@ -4824,7 +4598,6 @@ function useCommand.removefeet()
 		cmdlp.Character.LeftFoot:Destroy()
 	else
 		opx("*","You need to be R15 for this command!")
-        opx("*" , "Join discord if you dont know what this is")
 	end
 end
 
@@ -4921,7 +4694,6 @@ function useCommand.removelefthand()
 		cmdlp.Character.LeftHand:Destroy()
 	else
 		opx("*","You need to be R15 for this command!")
-        opx("*","Join discord if you dont know what this is")
 	end
 end
 
@@ -4931,7 +4703,6 @@ function useCommand.removerighthand()
 		cmdlp.Character.RightHand:Destroy()
 	else
 		opx("*","You need to be R15 for this command!")
-        opx("*","Join discord if you dont know what this is")
 	end
 end
 
@@ -4941,7 +4712,6 @@ function useCommand.removeleftfoot()
 		cmdlp.Character.LeftFoot:Destroy()
 	else
 		opx("*","You need to be R15 for this command!")
-        opx("*","Join discord if you dont know what this is ")
 	end
 end
 
@@ -4951,7 +4721,6 @@ function useCommand.removerightfoot()
 		cmdlp.Character.RightFoot:Destroy()
 	else
 		opx("*","You need to be R15 for this command!")
-        opx("*","Join discord if you dont know what this is")
 	end
 end
 
@@ -4961,7 +4730,6 @@ function useCommand.removerightlowerarm()
 		cmdlp.Character.RightLowerArm:Destroy()
 	else
 		opx("*","You need to be R15 for this command!")
-        opx("*","Join discord if you dont know what this is")
 	end
 end
 
@@ -4971,7 +4739,6 @@ function useCommand.removeleftlowerarm()
 		cmdlp.Character.LeftLowerArm:Destroy()
 	else
 		opx("*","You need to be R15 for this command!")
-        opx("*","Join discord if you dont know what this is")
 	end
 end
 
@@ -4981,7 +4748,6 @@ function useCommand.removerightlowerleg()
 		cmdlp.Character.RightLowerLeg:Destroy()
 	else
 		opx("*","You need to be R15 for this command!")
-        opx("*","Join discord if you dont know what this is")
 	end
 end
 
@@ -4991,7 +4757,6 @@ function useCommand.removeleftlowerleg()
 		cmdlp.Character.LeftLowerLeg:Destroy()
 	else
 		opx("*","You need to be R15 for this command!")
-        opx("*", "Join discord if you dont knowwhat this is ")
 	end
 end
 
@@ -5242,24 +5007,6 @@ function useCommand.creatorid()
 	cmdlp.CharacterAppearanceId = game.CreatorId
 end
 
-
-function useCommand.skateboard()
-	SKATEBOARD_HAT  = "MeshPartAccessory"  -- if you want to change this, look in dex and get the name of the hat
-AUTOCHOOSE = true  -- auto chooses hat
-
-SPEED            = 32
-JUMP            = 41
-ACCELERATION    = 0.4
-STEERABILITY    = 0.7
-GRIP            = 0
-
-OFFSET = CFrame.Angles(math.rad(-90),math.rad(0),math.rad(135))   -- Change the last number to 45 if it is weird
-HOLD_OFFSET = CFrame.Angles(math.rad(0),math.rad(80),math.rad(45))
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/saucekid/scripts/main/sauceskate.lua"))()
-opx("*","enjoy!")
-end
-
 function useCommand.nilgotopart()
 	if arguments[2] then
 		for i,v in pairs(workspace:GetDescendants()) do
@@ -5403,8 +5150,6 @@ function useCommand.removehatsmesh()
 		end
 	end
 end
-
-
 
 function useCommand.removegearmesh()
 	opx("-","Removed gears meshes")
@@ -5577,7 +5322,7 @@ end
 
 function useCommand.using()
 	opx("-","Said script <3")
-	sayremote:FireServer("I am using NugzyCMD, Version: "..ver, "All")
+	sayremote:FireServer("I am using Nugzy CMD, Version: "..ver, "All")
 end
 
 function useCommand.banlands()
@@ -7048,7 +6793,6 @@ function useCommand.unspin()
 	end
 end
 
-
 function useCommand.hatspin()
 	opx("-","Hats are now spinning")
 	for i,v in pairs(cmdlp.Character:GetChildren()) do
@@ -7339,8 +7083,8 @@ function useCommand.playerstalker()
 end
 
 function useCommand.badger()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/badger.lua",true))()
-	opx("-","Loaded Badger")
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/masters/badger.lua",true))()
+	opx("-","Loaded Badger ")
 end
 
 function useCommand.explorer()
@@ -7534,434 +7278,6 @@ function useCommand.restorecamera()
 	cmdlp.CameraMinZoomDistance = 0.5
 	cmdlp.CameraMode = "Classic"
 	cmdlp.EnableMouseLockOption = true
-end
-
-function useCommand.amogus()
-	sethiddenproperty(game.Players.LocalPlayer,"MaximumSimulationRadius",math.huge)
-sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius",1.0000000331814e+32)
-
-for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
-if v:IsA("BasePart") then--and v.Name ~="HumanoidRootPart" then 
-game:GetService("RunService").Heartbeat:connect(function()
-v.Velocity = Vector3.new(0,-25.05,0)
-wait(0.5)
-end)
-end
-end
-
-local char = workspace[game.Players.LocalPlayer.Name]
-char.Archivable = true
-
-local fakechar = char:Clone()
-fakechar.Name = 'clone'
-fakechar.Parent = char
-fakechar.Head.face.Transparency = 1
-workspace.CurrentCamera.CameraSubject = fakechar
-char.Torso.Anchored = true
-
-local connections = {}
-
-function create(part, parent, p, r)
-part.AccessoryWeld:Remove()
-Instance.new("Attachment",part)
-Instance.new("AlignPosition",part)
-Instance.new("AlignOrientation",part)
-Instance.new("Attachment",parent)
-part.AlignPosition.Attachment0 = part.Attachment
-part.AlignOrientation.Attachment0 = part.Attachment
-part.AlignPosition.Attachment1 = parent.Attachment
-part.AlignOrientation.Attachment1 = parent.Attachment
-part.Attachment.Position = p
-part.Attachment.Orientation = r
-part.AlignPosition.MaxForce = 999999999
-part.AlignPosition.MaxVelocity = math.huge
-part.AlignPosition.ReactionForceEnabled = false
-part.AlignPosition.Responsiveness = math.huge
-part.AlignOrientation.Responsiveness = 200
-part.AlignPosition.RigidityEnabled = false
-part.AlignOrientation.MaxTorque = 999999999
-end
-
-local hats = {
-Torso = char:FindFirstChild('Hat1').Handle,
-Torso1 = char:FindFirstChild('Robloxclassicred').Handle,
-LeftArm = char:FindFirstChild('Pink Hair').Handle,
-RightArm = char:FindFirstChild('Pal Hair').Handle,
-LeftLeg = char:FindFirstChild('Kate Hair').Handle,
-RightLeg = char:FindFirstChild('LavanderHair').Handle,
-Glass = char:FindFirstChild('Necklace').Handle
-}
-
-function rmesh(HatName)
-for _,mesh in next, workspace[game.Players.LocalPlayer.Name][HatName]:GetDescendants() do
-if mesh:IsA("Mesh") or mesh:IsA("SpecialMesh") then
-mesh:Remove()
-end
-end
-end
-
-table.insert(connections, game:GetService('RunService').Stepped:Connect(function()
-fakechar.Torso.CanCollide = false
-fakechar.Head.CanCollide = false
-end))
-
-
-create(hats.Torso, fakechar['Torso'], Vector3.new(.5,0,0), Vector3.new(90,0,0))
-create(hats.Torso1, fakechar['Torso'], Vector3.new(-.5,0,0), Vector3.new(90,0,0))
-create(hats.LeftArm, fakechar['Left Arm'], Vector3.new(), Vector3.new(90,0,0))
-create(hats.RightArm, fakechar['Right Arm'], Vector3.new(), Vector3.new(90,0,0))
-create(hats.LeftLeg, fakechar['Left Leg'], Vector3.new(), Vector3.new(90,0,0))
-create(hats.RightLeg, fakechar['Right Leg'], Vector3.new(), Vector3.new(90,0,0))
-create(hats.Glass, fakechar['Torso'], Vector3.new(.5,-.3,0), Vector3.new(0,90,0))
-
-rmesh('Hat1')
-rmesh('Robloxclassicred')
-rmesh('Pink Hair')
-rmesh('Pal Hair')
-rmesh('Kate Hair')
-rmesh('LavanderHair')
-rmesh('Necklace')
-
-local kill = false
-
-for i,v in next, fakechar:GetDescendants() do
-if v:IsA("BasePart") then
-v.Transparency = 1
-end
-end
-
-fakechar.Humanoid.Died:Connect(function()
-   game.Players.LocalPlayer.Character = char
-   char:BreakJoints()
-   fakechar:Destroy()
-kill = true
-
-   for _,v in pairs(connections) do v:Disconnect() end
-end)
-char.Humanoid.Died:Connect(function()
-   game.Players.LocalPlayer.Character = char
-   char:BreakJoints()
-   fakechar:Destroy()
-kill = true
-
-   for _,v in pairs(connections) do v:Disconnect() end
-end)
-
-game.Players.LocalPlayer.Character = fakechar
-
-local Player=game.Players.LocalPlayer local Character=fakechar local hum = Character.Humanoid local LeftArm=Character["Left Arm"] local LeftLeg=Character["Left Leg"] local RightArm=Character["Right Arm"] local RightLeg=Character["Right Leg"] local Root=Character["HumanoidRootPart"] local Head=Character["Head"] local Torso=Character["Torso"] local Neck=Torso["Neck"] local mouse = Player:GetMouse() local position = nil local sine = 0 local t = 0 local change = 1
-
-local HEADLERP = Instance.new("ManualWeld")
-HEADLERP.Parent = Head
-HEADLERP.Part0 = Head
-HEADLERP.Part1 = Head
-HEADLERP.C0 = CFrame.new(0, -1.5, -0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(0))
- 
-local TORSOLERP = Instance.new("ManualWeld")
-TORSOLERP.Parent = Root
-TORSOLERP.Part0 = Torso
-TORSOLERP.C0 = CFrame.new(0, 0, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(0))
- 
-local ROOTLERP = Instance.new("ManualWeld")
-ROOTLERP.Parent = Root
-ROOTLERP.Part0 = Root
-ROOTLERP.Part1 = Torso
-ROOTLERP.C0 = CFrame.new(0, 0, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(0))
- 
-local RIGHTARMLERP = Instance.new("ManualWeld")
-RIGHTARMLERP.Parent = RightArm
-RIGHTARMLERP.Part0 = RightArm
-RIGHTARMLERP.Part1 = Torso
-RIGHTARMLERP.C0 = CFrame.new(-1.5, 0, -0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(0))
- 
-local LEFTARMLERP = Instance.new("ManualWeld")
-LEFTARMLERP.Parent = LeftArm
-LEFTARMLERP.Part0 = LeftArm
-LEFTARMLERP.Part1 = Torso
-LEFTARMLERP.C0 = CFrame.new(1.5, 0, -0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(0))
- 
-local RIGHTLEGLERP = Instance.new("ManualWeld")
-RIGHTLEGLERP.Parent = RightLeg
-RIGHTLEGLERP.Part0 = RightLeg
-RIGHTLEGLERP.Part1 = Torso
-RIGHTLEGLERP.C0 = CFrame.new(-0.5, 2, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(0))
- 
-local LEFTLEGLERP = Instance.new("ManualWeld")
-LEFTLEGLERP.Parent = LeftLeg
-LEFTLEGLERP.Part0 = LeftLeg
-LEFTLEGLERP.Part1 = Torso
-LEFTLEGLERP.C0 = CFrame.new(0.5, 2, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(0))
-
-function swait(num)
-	if num == 0 or num == nil then
-		game:service("RunService").Stepped:wait(0)
-	else
-		for i = 0, num do
-			game:service("RunService").Stepped:wait(0)
-		end
-	end
-end
-
-m = game.Players.LocalPlayer:GetMouse()
-
-venttoggle = false
-vented = false
-mode2 = false
-attack = false
-modetoggle = false
-dead = false
-dtoggle = false
-sittoggle = false
-sit = false
-
-m.Button1Down:connect(function()
-if kill == false and mode2 == false and dead == false then
-attack = true
-vented = false
-Character.Humanoid.WalkSpeed = 0
-wait(0.5)
-Character.Humanoid.WalkSpeed = 16
-attack = false
-end
-end)
-
-m.KeyDown:connect(function(k)
-k=k:lower()
-if k == 'e' then
-if kill == false then
-if venttoggle == false then
-modetoggle = false
-mode2 = false
-venttoggle = true
-vented = true
-Character.Humanoid.WalkSpeed = 100
-position = "ventidle"
-elseif venttoggle == true then
-venttoggle = false
-vented = false
-Character.Humanoid.WalkSpeed = 16
-end
-end
-end
-end)
-
-m.KeyDown:connect(function(k)
-k=k:lower()
-if k == 'f' then
-if kill == false then
-if modetoggle == false then
-venttoggle = false
-vented = false
-modetoggle = true
-mode2 = true
-sittoggle = false
-sit = false
-Character.Humanoid.WalkSpeed = 60
-elseif modetoggle == true then
-modetoggle = false
-mode2 = false
-Character.Humanoid.WalkSpeed = 16
-end
-end
-end
-end)
-
-m.KeyDown:connect(function(k)
-k=k:lower()
-if k == 'q' then
-if kill == false then
-if dtoggle == false then
-venttoggle = false
-vented = false
-modetoggle = false
-mode2 = false
-dtoggle = true
-dead = true
-sittoggle = false
-sit = false
-Character.Humanoid.WalkSpeed = 0
-elseif dtoggle == true then
-dtoggle = false
-dead = false
-Character.Humanoid.WalkSpeed = 16
-end
-end
-end
-end)
-
-m.KeyDown:connect(function(k)
-k=k:lower()
-if k == 'c' then
-if kill == false then
-if sittoggle == false then
-venttoggle = false
-vented = false
-modetoggle = false
-mode2 = false
-dtoggle = false
-dead = false
-sittoggle = true
-sit = true
-Character.Humanoid.WalkSpeed = 0
-elseif sittoggle == true then
-sittoggle = false
-sit = false
-Character.Humanoid.WalkSpeed = 16
-end
-end
-end
-end)
-
-coroutine.wrap(function()--poses
-while true do
-if attack == true and vented == false and mode2 == false and dead == false and sit == false then
-position = "attack"
-elseif attack == false and vented == false and mode2 == false and dead == true and sit == false then
-position = "dead"
-elseif attack == false and vented == false and mode2 == false and dead == false and sit == true then
-position = "sit"
-end
-wait()
-end
-end)()
-
---[[
-coroutine.wrap(function() -------Checks
-while true do
-if attack == false and vented == false and mode2 == false and dead == false and sit == true then
-position = "sit"
-end
-wait()
-end
-end)()
-
-
-coroutine.wrap(function() -------Checks
-while true do
-if attack == false and vented == false and mode2 == false and dead == true and sit == false then
-position = "dead"
-end
-wait()
-end
-end)()
-]]
-
-coroutine.wrap(function() -------Checks
-while true do
-if mode2 == true and vented == false and dead == false then
-if Root.Velocity.Magnitude < 2 then
-position = "idle2"
-elseif Root.Velocity.Magnitude > 20 then
-position = "walk2"
-end
-end
-wait()
-end
-end)()
-
-coroutine.wrap(function() -------Checks
-while true do
-if vented == false and mode2 == false and attack == false and dead == false then
-if Root.Velocity.y > 1 then
-position = "jump"
-elseif Root.Velocity.y < -1 then
-position = "fall"
-elseif Root.Velocity.Magnitude < 2 then
-position = "idle"
-elseif Root.Velocity.Magnitude < 20 then
-position = "walk"
-elseif Root.Velocity.Magnitude > 20 then
-position = "run"
-end
-end
-wait()
-end
-end)()
-
-coroutine.wrap(function()
-while true do
-sine = sine + change
-if position == "idle" then
-change = 1
-ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0 + 0 * math.sin(sine/12), 0 + 0.3 * math.sin(sine/12), 0 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 10 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-0.4 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12), -0.8 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(0.4 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12), -0.8 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.5 + 0 * math.sin(sine/12), 2 + 0.3 * math.sin(sine/12), 0.3 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 10 * math.sin(sine/12)), math.rad(20 + 0 * math.sin(sine/12)), math.rad(-3 + 0 * math.sin(sine/12))),0.1)
-LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5 + 0 * math.sin(sine/12), 2 + 0.3 * math.sin(sine/12), 0.3 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 10 * math.sin(sine/12)), math.rad(-20 + 0 * math.sin(sine/12)), math.rad(3 + 0 * math.sin(sine/12))),0.1)
-elseif position == "walk" then
-change = 1
-ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0 + 0 * math.sin(sine/12), 0 + 0.3 * math.sin(sine/12), 0 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(-10 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-0.4 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12), -0.8 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(0.4 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12), -0.8 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.5 + 0 * math.sin(sine/12), 2 + 0.3 * math.sin(sine/12), 0.3 + 0.3 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 30 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5 + 0 * math.sin(sine/12), 2 + 0.3 * math.sin(sine/12), 0.3 + -0.3 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + -30 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-elseif position == "jump" then
-change = 1
-ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-0.4 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12), -0.8 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(0.4 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12), -0.8 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.5 + 0 * math.sin(sine/12), 0.5 + 0 * math.sin(sine/12), 0.5 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(15 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5 + 0 * math.sin(sine/12), 1 + 0 * math.sin(sine/12), 0.5 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(10 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-elseif position == "fall" then
-change = 1
-ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-0.4 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12), -0.8 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(0.4 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12), -0.8 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.5 + 0 * math.sin(sine/12), 0.5 + 0 * math.sin(sine/12), 0.5 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(15 + 10 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(-10 + 0 * math.sin(sine/12))),0.1)
-LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5 + 0 * math.sin(sine/12), 1 + 0 * math.sin(sine/12), 0.5 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(10 + 5 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(10 + 0 * math.sin(sine/12))),0.1)
-elseif position == "vent" then
-change = 1
-ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0 + 0 * math.sin(sine/12), 0 + -8 * math.sin(sine/12), 0 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-0.4 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12), -0.8 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(0.4 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12), -0.8 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.5 + 0 * math.sin(sine/12), 1.5 + 0 * math.sin(sine/12), 1 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(26.02 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5 + 0 * math.sin(sine/12), 2 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-elseif position == "ventidle" then
-change = 1
-ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0 + 0 * math.sin(sine/12), -20 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-0.4 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12), -0.8 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(0.4 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12), -0.8 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.5 + 0 * math.sin(sine/12), 1.5 + 0 * math.sin(sine/12), 1 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(26.02 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5 + 0 * math.sin(sine/12), 2 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-elseif position == "idle2" then
-change = 1
-ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0 + 0 * math.sin(sine/20), 3 + 0.3 * math.sin(sine/20), 0 + 0 * math.sin(sine/20)) * CFrame.Angles(math.rad(0 + 20 * math.sin(sine/20)), math.rad(0 + 0 * math.sin(sine/20)), math.rad(0 + 0 * math.sin(sine/20))),0.1)
-RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-0.4 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12), -0.8 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(0.4 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12), -0.8 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.5 + 0 * math.sin(sine/20), 1 + 0 * math.sin(sine/20), 1 + 0 * math.sin(sine/20)) * CFrame.Angles(math.rad(20 + -20 * math.sin(sine/20)), math.rad(0 + 0 * math.sin(sine/20)), math.rad(0 + 0 * math.sin(sine/20))),0.1)
-LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5 + 0 * math.sin(sine/20), 2 + 0 * math.sin(sine/20), 0.5 + -0.5 * math.sin(sine/20)) * CFrame.Angles(math.rad(10 + -20 * math.sin(sine/20)), math.rad(0 + 0 * math.sin(sine/20)), math.rad(0 + 0 * math.sin(sine/20))),0.1)
-elseif position == "walk2" then
-change = 1
-ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0 + 0 * math.sin(sine/20), 3 + 0.3 * math.sin(sine/20), 0 + 0 * math.sin(sine/20)) * CFrame.Angles(math.rad(-60 + 10 * math.sin(sine/20)), math.rad(0 + 0 * math.sin(sine/20)), math.rad(0 + 0 * math.sin(sine/20))),0.1)
-RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-0.4 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12), -0.8 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(0.4 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12), -0.8 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.4 + 0 * math.sin(sine/20), 2 + 0 * math.sin(sine/20), 0.3 + 0 * math.sin(sine/20)) * CFrame.Angles(math.rad(0 + -10 * math.sin(sine/20)), math.rad(0 + 0 * math.sin(sine/20)), math.rad(-5 + 0 * math.sin(sine/20))),0.1)
-LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5 + 0 * math.sin(sine/20), 1 + 0 * math.sin(sine/20), 0.5 + 0 * math.sin(sine/20)) * CFrame.Angles(math.rad(0 + -20 * math.sin(sine/20)), math.rad(0 + 0 * math.sin(sine/20)), math.rad(5 + 0 * math.sin(sine/20))),0.1)
-elseif position == "attack" then
-change = 1
-ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0 + 0 * math.sin(sine/5), 0 + 0 * math.sin(sine/5), 0 + 0 * math.sin(sine/5)) * CFrame.Angles(math.rad(30 + 0 * math.sin(sine/5)), math.rad(0 + 0 * math.sin(sine/5)), math.rad(0 + 0 * math.sin(sine/5))),0.1)
-RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-0.4 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12), -0.8 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(0.4 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12), -0.8 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.4 + 0 * math.sin(sine/12), 2 + 0 * math.sin(sine/12), 0.5 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(30 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(-4 + 0 * math.sin(sine/12))),0.1)
-LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.4 + 0 * math.sin(sine/12), 2 + 0 * math.sin(sine/12), 0.5 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(30 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(4 + 0 * math.sin(sine/12))),0.1)
-elseif position == "sit" then
-change = 1
-ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0 + 0 * math.sin(sine/5), -1.8 + 0 * math.sin(sine/5), 0 + 0 * math.sin(sine/5)) * CFrame.Angles(math.rad(10 + 0 * math.sin(sine/5)), math.rad(0 + 0 * math.sin(sine/5)), math.rad(0 + 0 * math.sin(sine/5))),0.1)
-RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-0.4 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12), -0.8 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(0.4 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12), -0.8 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.4 + 0 * math.sin(sine/12), 1 + 0 * math.sin(sine/12), -1 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(-90 + 0 * math.sin(sine/12)), math.rad(10 + 0 * math.sin(sine/12)), math.rad(-4 + 0 * math.sin(sine/12))),0.1)
-LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.4 + 0 * math.sin(sine/12), 1 + 0 * math.sin(sine/12), -1 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(-90 + 0 * math.sin(sine/12)), math.rad(-10 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-elseif position == "dead" then
-change = 1
-ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0 + 0 * math.sin(sine/5), -2.5 + 0 * math.sin(sine/5), -1 + 0 * math.sin(sine/5)) * CFrame.Angles(math.rad(-90 + 0 * math.sin(sine/5)), math.rad(0 + 0 * math.sin(sine/5)), math.rad(0 + 0 * math.sin(sine/5))),0.1)
-RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-0.4 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12), -0.8 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(0.4 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12), -0.8 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12))),0.1)
-RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.4 + 0 * math.sin(sine/12), 3 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(-4 + 0 * math.sin(sine/12))),0.1)
-LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.4 + 0 * math.sin(sine/12), 3 + 0 * math.sin(sine/12), 0 + 0 * math.sin(sine/12)) * CFrame.Angles(math.rad(0 + 0 * math.sin(sine/12)), math.rad(0 + 0 * math.sin(sine/12)), math.rad(4 + 0 * math.sin(sine/12))),0.1)
-end
-swait()
-end
-end)()
 end
 
 function useCommand.unscramble()
@@ -8170,7 +7486,7 @@ function useCommand.migratesaves()
 				opx("-","Migrated NugzyCMD.save to current saves")
 				writefile("NugzyCMD.lua",readfile("NugzyCMD.save"))
 			else
-				opx("*","You do not have a NugzyCMD save.")
+				opx("*","You do not have a Nugzy CMD save.")
 			end
 		end
 	end
@@ -8187,8 +7503,8 @@ function useCommand.fuckoff()
 end
 
 function useCommand.reload()
-	opx("-","Reloading NugzyCMD...")
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/Source", true))()
+	opx("-","Reloading Nugzy CMD...")
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/source", true))()
 end
 
 function useCommand.partesp()
@@ -8256,7 +7572,7 @@ end
 function useCommand.messagebox()
 	if messageboxasync then
 		opx("-","Opened message box, "..getstring(2))
-		messageboxasync(getstring(2), "CMD-X Message", 262148)
+		messageboxasync(getstring(2), "NugzyCMD Message", 262148)
 	else
 		opx("*","Your exploit does not support messageboxes!")
 	end
@@ -8423,7 +7739,6 @@ function useCommand.audiolog()
 					end
 				else
 					opx("*","Something went wrong")
-                    opx("*","Please join discord and share the error")
 				end
 			end
 		else
@@ -9004,775 +8319,14 @@ function useCommand.uninfjump()
 	infiniteJump = false
 end
 
-function useCommand.idk ()
-	for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
-		if v:IsA("BasePart") and v.Name ~="HumanoidRootPart" then
-		game:GetService("RunService").Heartbeat:connect(function()
-		v.Velocity = Vector3.new(0,-30,0)
-		wait(0.5)
-		end)
-		end
-		end
-		
-		function rmesh(HatName)
-		for _,mesh in next, workspace[game.Players.LocalPlayer.Name][HatName]:GetDescendants() do
-		if mesh:IsA("Mesh") or mesh:IsA("SpecialMesh") then
-		mesh:Remove()
-		end
-		end
-		end
-		
-		function create(part, parent, position, rotation)
-		part.AccessoryWeld:Remove()
-		Instance.new("Attachment",part)
-		Instance.new("AlignPosition",part)
-		Instance.new("AlignOrientation",part)
-		Instance.new("Attachment",parent)
-		part.AlignPosition.Attachment0 = part.Attachment
-		part.AlignOrientation.Attachment0 = part.Attachment
-		part.AlignPosition.Attachment1 = parent.Attachment
-		part.AlignOrientation.Attachment1 = parent.Attachment
-		part.Attachment.Position = position
-		part.Attachment.Orientation = rotation
-		part.AlignPosition.Responsiveness = 200
-		part.AlignOrientation.Responsiveness = 200
-		part.AlignPosition.MaxForce = 9999999
-		part.AlignPosition.RigidityEnabled = false
-		part.AlignOrientation.MaxTorque = 9999999
-		end
-		
-		local LocalPlayer = game.Players.LocalPlayer
-		
-		function eswait(num)
-		if num == 0 or num == nil then
-		game:service("RunService").Stepped:wait(0)
-		else
-		for i = 0, num do
-		game:service("RunService").Stepped:wait(0)
-		end
-		end
-		end
-		
-		function makepart(hat,part)
-		Instance.new('Part',workspace[LocalPlayer.Name])
-		workspace[LocalPlayer.Name].Part.Name = 'lerp'..hat
-		workspace[LocalPlayer.Name]['lerp'..hat].CanCollide = false
-		workspace[LocalPlayer.Name]['lerp'..hat].Size = workspace[LocalPlayer.Name][hat].Handle.Size
-		workspace[LocalPlayer.Name]['lerp'..hat].Transparency = 1
-		Instance.new('Weld',workspace[LocalPlayer.Name]['lerp'..hat])
-		create(workspace[LocalPlayer.Name][hat].Handle,workspace[LocalPlayer.Name]['lerp'..hat],Vector3.new(),Vector3.new())
-		workspace[LocalPlayer.Name]['lerp'..hat].Weld.Part0 = workspace[LocalPlayer.Name]['lerp'..hat]
-		workspace[LocalPlayer.Name]['lerp'..hat].Weld.Part1 = workspace[LocalPlayer.Name][part]
-		workspace[LocalPlayer.Name]['lerp'..hat].Weld.C0 = workspace[LocalPlayer.Name]['lerp'..hat].CFrame:inverse() * workspace[LocalPlayer.Name][part].CFrame * CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),math.rad(0),0)
-		end
-		
-		local hatsine = 0
-		
-		local hatchange = 1
-		
-		function clerp(hat,ppx,ppy,pppz,rrrx,rrry,rrz,lppx,lppy,lpppz,lrrrx,lrrry,lrrz,speed)
-		coroutine.wrap(function()
-		while true do
-		hatsine = hatsine + speed
-		workspace[game.Players.LocalPlayer.Name]['lerp'..hat].Weld.C0 = workspace[game.Players.LocalPlayer.Name]['lerp'..hat].Weld.C0:lerp(CFrame.new(ppx + lppx * math.sin(hatsine/11), ppy + lppy * math.sin(hatsine/11), pppz + lpppz * math.sin(hatsine/11)) * CFrame.Angles(math.rad(rrrx + lrrrx * math.sin(hatsine/11)), math.rad(rrry + lrrry * math.sin(hatsine/11)), math.rad(rrz + lrrz * math.sin(hatsine/11))),0.1)
-		eswait()
-		end
-		end)()
-		end
-		
-		local player = game.Players.LocalPlayer
-		local character1 = player.Character
-		local mouse = player:GetMouse()
-		
-		local fakebody = Instance.new("Part", character1)
-		fakebody.Transparency = 1
-		fakebody.Anchored = true
-		fakebody.CanCollide = false
-		fakebody.Position = character1.Head.Position
-		fakebody.Name = "FPart"
-		wait()
-		_G.ReanimationType = "PDeath" --PDeath, Fling, Simple
-		_G.Velocity = Vector3.new(36,0,0)
-		_G.FlingBlock = true
-		_G.FlingBlockTransparency = 1
-		_G.HighlightFlingBlock = true
-		_G.FlingBlockPosition = "FPart"
-		_G.HighlightFlingBlockColor = Color3.fromRGB(255,0,0)
-		
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/GelatekWasTaken/Reanimation.lua/main/Main/Main.lua"))()
-		wait(1)
-		
-		mouse.KeyDown:connect(function(key)
-			if key == "e" then
-			character1.Reanimate.FPart.Position = mouse.Hit.p
-			end
-		end)
-		
-		rmesh('Pink Hair')
-		rmesh('Kate Hair')
-		
-		makepart('Kate Hair','Right Arm')
-		clerp('Kate Hair',0,1,0,0,0,0,0,0,0,0,0,0,1)
-		
-		makepart('Pink Hair','Right Arm')
-		clerp('Pink Hair',0,0.5,-2,-90,0,0,0,0,0,0,0,0,1)
-		
-		local Scale = game.Players.LocalPlayer.Character.Torso.Size.X/2*(game.Players.LocalPlayer.Character.Torso:FindFirstChild("ScaleInserted") ~= nil and game.Players.LocalPlayer.Character.Torso:FindFirstChild("ScaleInserted").Scale.Z or 1)*0.8
-		local Speed = 20*Scale
-		local Gravity = 0.1
-		
-		local Player = game.Players.LocalPlayer
-		local Character = Player.Character.Reanimate
-		local Humanoid = Character.Humanoid
-		Humanoid:SetStateEnabled(Enum.HumanoidStateType.Ragdoll,false)
-		local Torso = Character.HumanoidRootPart
-		local Mouse = game.Players.LocalPlayer:GetMouse()
-		local RenderStepped = game:GetService("RunService").RenderStepped
-		local Camera = Workspace.CurrentCamera
-		Camera:ClearAllChildren()
-		local Model = Instance.new("Model",Character)
-		local IgnoreList = {Character,Workspace.Terrain}
-		
-		local Part0Joint = CFrame.new(Vector3.new(1,0.75,0)*Scale*1.25)
-		local Part1Joint = CFrame.new(Vector3.new(-0.5,0.75,0)*Scale*1.25)
-		local RotationOffset = CFrame.Angles(math.rad(90),math.rad(0),0)
-		local Gangster = false
-		
-		local Part0JointHead = CFrame.new(Vector3.new(0,1,0)*Scale*1.25)
-		local Part1JointHead = CFrame.new(Vector3.new(0,-0.5,0)*Scale*1.25)
-		local RotationOffsetHead = CFrame.Angles(0,0,0)
-		
-		local Handle = Instance.new("Part",Model)
-		Handle.CanCollide = false
-		Handle.Name = "Handle"
-		Handle.Position = Vector3.new(0,100,0)
-		Handle:BreakJoints()
-		Handle.FormFactor = "Custom"
-		Handle.Size = Vector3.new(0.2,0.2,0.2)
-		Handle.TopSurface = "SmoothNoOutlines"
-		Handle.BottomSurface = "SmoothNoOutlines"
-		Handle.FrontSurface = "SmoothNoOutlines"
-		Handle.BackSurface = "SmoothNoOutlines"
-		Handle.RightSurface = "SmoothNoOutlines"
-		Handle.LeftSurface = "SmoothNoOutlines"
-		Handle.BrickColor = BrickColor.new("Black")
-		local Mesh = Instance.new("BlockMesh",Handle)
-		Mesh.Scale = Vector3.new(0.25,1,0.4) / 0.2 * Scale
-		local HandleWeld = Instance.new("Motor6D")
-		HandleWeld.Part0 = Character["Right Arm"]
-		HandleWeld.Part1 = Handle
-		HandleWeld.C0 = CFrame.new(Vector3.new(0,-1,0)*Scale) * CFrame.Angles(math.rad(-105),0,0)
-		HandleWeld.Parent = Handle
-		
-		local Part = Instance.new("Part",Model)
-		Part.CanCollide = false
-		Part.Position = Vector3.new(0,100,0)
-		Part:BreakJoints()
-		Part.FormFactor = "Custom"
-		Part.Size = Vector3.new(0.2,0.2,0.2)
-		Part.TopSurface = "SmoothNoOutlines"
-		Part.BottomSurface = "SmoothNoOutlines"
-		Part.FrontSurface = "SmoothNoOutlines"
-		Part.BackSurface = "SmoothNoOutlines"
-		Part.RightSurface = "SmoothNoOutlines"
-		Part.LeftSurface = "SmoothNoOutlines"
-		Part.BrickColor = BrickColor.new("Black")
-		local Mesh = Instance.new("CylinderMesh",Part)
-		Mesh.Scale = Vector3.new(0.07,0.2,0.07) / 0.2 * Scale
-		local PartWeld = Instance.new("Motor6D")
-		PartWeld.Part0 = Handle
-		PartWeld.Part1 = Part
-		PartWeld.C0 = CFrame.new(Vector3.new(-0.115,-0.475,-0.190)*Scale) * CFrame.Angles(0,0,0)
-		PartWeld.Parent = Part
-		
-		local Part = Instance.new("Part",Model)
-		Part.CanCollide = false
-		Part.Position = Vector3.new(0,100,0)
-		Part:BreakJoints()
-		Part.FormFactor = "Custom"
-		Part.Size = Vector3.new(0.2,0.2,0.2)
-		Part.TopSurface = "SmoothNoOutlines"
-		Part.BottomSurface = "SmoothNoOutlines"
-		Part.FrontSurface = "SmoothNoOutlines"
-		Part.BackSurface = "SmoothNoOutlines"
-		Part.RightSurface = "SmoothNoOutlines"
-		Part.LeftSurface = "SmoothNoOutlines"
-		Part.BrickColor = BrickColor.new("Black")
-		local Mesh = Instance.new("CylinderMesh",Part)
-		Mesh.Scale = Vector3.new(0.07,0.2,0.07) / 0.2 * Scale
-		local PartWeld = Instance.new("Motor6D")
-		PartWeld.Part0 = Handle
-		PartWeld.Part1 = Part
-		PartWeld.C0 = CFrame.new(Vector3.new(0.115,-0.475,0.190)*Scale) * CFrame.Angles(0,0,0)
-		PartWeld.Parent = Part
-		
-		local Part = Instance.new("Part",Model)
-		Part.CanCollide = false
-		Part.Position = Vector3.new(0,100,0)
-		Part:BreakJoints()
-		Part.FormFactor = "Custom"
-		Part.Size = Vector3.new(0.2,0.2,0.2)
-		Part.TopSurface = "SmoothNoOutlines"
-		Part.BottomSurface = "SmoothNoOutlines"
-		Part.FrontSurface = "SmoothNoOutlines"
-		Part.BackSurface = "SmoothNoOutlines"
-		Part.RightSurface = "SmoothNoOutlines"
-		Part.LeftSurface = "SmoothNoOutlines"
-		Part.BrickColor = BrickColor.new("Black")
-		local Mesh = Instance.new("CylinderMesh",Part)
-		Mesh.Scale = Vector3.new(0.07,0.2,0.07) / 0.2 * Scale
-		local PartWeld = Instance.new("Motor6D")
-		PartWeld.Part0 = Handle
-		PartWeld.Part1 = Part
-		PartWeld.C0 = CFrame.new(Vector3.new(-0.115,-0.475,0.190)*Scale) * CFrame.Angles(0,0,0)
-		PartWeld.Parent = Part
-		
-		local Part = Instance.new("Part",Model)
-		Part.CanCollide = false
-		Part.Position = Vector3.new(0,100,0)
-		Part:BreakJoints()
-		Part.FormFactor = "Custom"
-		Part.Size = Vector3.new(0.2,0.2,0.2)
-		Part.TopSurface = "SmoothNoOutlines"
-		Part.BottomSurface = "SmoothNoOutlines"
-		Part.FrontSurface = "SmoothNoOutlines"
-		Part.BackSurface = "SmoothNoOutlines"
-		Part.RightSurface = "SmoothNoOutlines"
-		Part.LeftSurface = "SmoothNoOutlines"
-		Part.BrickColor = BrickColor.new("Black")
-		local Mesh = Instance.new("CylinderMesh",Part)
-		Mesh.Scale = Vector3.new(0.07,0.2,0.07) / 0.2 * Scale
-		local PartWeld = Instance.new("Motor6D")
-		PartWeld.Part0 = Handle
-		PartWeld.Part1 = Part
-		PartWeld.C0 = CFrame.new(Vector3.new(0.115,-0.475,-0.190)*Scale) * CFrame.Angles(0,0,0)
-		PartWeld.Parent = Part
-		
-		local Part = Instance.new("Part",Model)
-		Part.CanCollide = false
-		Part.Position = Vector3.new(0,100,0)
-		Part:BreakJoints()
-		Part.FormFactor = "Custom"
-		Part.Size = Vector3.new(0.2,0.2,0.2)
-		Part.TopSurface = "SmoothNoOutlines"
-		Part.BottomSurface = "SmoothNoOutlines"
-		Part.FrontSurface = "SmoothNoOutlines"
-		Part.BackSurface = "SmoothNoOutlines"
-		Part.RightSurface = "SmoothNoOutlines"
-		Part.LeftSurface = "SmoothNoOutlines"
-		Part.BrickColor = BrickColor.new("Black")
-		local Mesh = Instance.new("BlockMesh",Part)
-		Mesh.Scale = Vector3.new(0.23,0.2,0.1) / 0.2 * Scale
-		local PartWeld = Instance.new("Motor6D")
-		PartWeld.Part0 = Handle
-		PartWeld.Part1 = Part
-		PartWeld.C0 = CFrame.new(Vector3.new(0,-0.475,-0.175)*Scale) * CFrame.Angles(0,0,0)
-		PartWeld.Parent = Part
-		
-		local Part = Instance.new("Part",Model)
-		Part.CanCollide = false
-		Part.Position = Vector3.new(0,100,0)
-		Part:BreakJoints()
-		Part.FormFactor = "Custom"
-		Part.Size = Vector3.new(0.2,0.2,0.2)
-		Part.TopSurface = "SmoothNoOutlines"
-		Part.BottomSurface = "SmoothNoOutlines"
-		Part.FrontSurface = "SmoothNoOutlines"
-		Part.BackSurface = "SmoothNoOutlines"
-		Part.RightSurface = "SmoothNoOutlines"
-		Part.LeftSurface = "SmoothNoOutlines"
-		Part.BrickColor = BrickColor.new("Black")
-		local Mesh = Instance.new("BlockMesh",Part)
-		Mesh.Scale = Vector3.new(0.23,0.2,0.1) / 0.2 * Scale
-		local PartWeld = Instance.new("Motor6D")
-		PartWeld.Part0 = Handle
-		PartWeld.Part1 = Part
-		PartWeld.C0 = CFrame.new(Vector3.new(0,-0.475,0.175)*Scale) * CFrame.Angles(0,0,0)
-		PartWeld.Parent = Part
-		
-		local Part = Instance.new("Part",Model)
-		Part.CanCollide = false
-		Part.Position = Vector3.new(0,100,0)
-		Part:BreakJoints()
-		Part.FormFactor = "Custom"
-		Part.Size = Vector3.new(0.2,0.2,0.2)
-		Part.TopSurface = "SmoothNoOutlines"
-		Part.BottomSurface = "SmoothNoOutlines"
-		Part.FrontSurface = "SmoothNoOutlines"
-		Part.BackSurface = "SmoothNoOutlines"
-		Part.RightSurface = "SmoothNoOutlines"
-		Part.LeftSurface = "SmoothNoOutlines"
-		Part.BrickColor = BrickColor.new("Black")
-		local Mesh = Instance.new("BlockMesh",Part)
-		Mesh.Scale = Vector3.new(0.1,0.2,0.38) / 0.2 * Scale
-		local PartWeld = Instance.new("Motor6D")
-		PartWeld.Part0 = Handle
-		PartWeld.Part1 = Part
-		PartWeld.C0 = CFrame.new(Vector3.new(-0.1,-0.475,0)*Scale) * CFrame.Angles(0,0,0)
-		PartWeld.Parent = Part
-		
-		local Part = Instance.new("Part",Model)
-		Part.CanCollide = false
-		Part.Position = Vector3.new(0,100,0)
-		Part:BreakJoints()
-		Part.FormFactor = "Custom"
-		Part.Size = Vector3.new(0.2,0.2,0.2)
-		Part.TopSurface = "SmoothNoOutlines"
-		Part.BottomSurface = "SmoothNoOutlines"
-		Part.FrontSurface = "SmoothNoOutlines"
-		Part.BackSurface = "SmoothNoOutlines"
-		Part.RightSurface = "SmoothNoOutlines"
-		Part.LeftSurface = "SmoothNoOutlines"
-		Part.BrickColor = BrickColor.new("Black")
-		local Mesh = Instance.new("BlockMesh",Part)
-		Mesh.Scale = Vector3.new(0.1,0.2,0.38) / 0.2 * Scale
-		local PartWeld = Instance.new("Motor6D")
-		PartWeld.Part0 = Handle
-		PartWeld.Part1 = Part
-		PartWeld.C0 = CFrame.new(Vector3.new(0.1,-0.475,0)*Scale) * CFrame.Angles(0,0,0)
-		PartWeld.Parent = Part
-		
-		local Part = Instance.new("Part",Model)
-		Part.CanCollide = false
-		Part.Position = Vector3.new(0,100,0)
-		Part:BreakJoints()
-		Part.FormFactor = "Custom"
-		Part.Size = Vector3.new(0.2,0.2,0.2)
-		Part.TopSurface = "SmoothNoOutlines"
-		Part.BottomSurface = "SmoothNoOutlines"
-		Part.FrontSurface = "SmoothNoOutlines"
-		Part.BackSurface = "SmoothNoOutlines"
-		Part.RightSurface = "SmoothNoOutlines"
-		Part.LeftSurface = "SmoothNoOutlines"
-		Part.BrickColor = BrickColor.new("Black")
-		local Mesh = Instance.new("BlockMesh",Part)
-		Mesh.Scale = Vector3.new(0.1,0.3,0.05) / 0.2 * Scale
-		local PartWeld = Instance.new("Motor6D")
-		PartWeld.Part0 = Handle
-		PartWeld.Part1 = Part
-		PartWeld.C0 = CFrame.Angles(math.rad(15),0,0) * CFrame.new(Vector3.new(0,0.25,-0.75)*Scale) * CFrame.Angles(math.rad(-10),0,0)
-		PartWeld.Parent = Part
-		
-		local Part = Instance.new("Part",Model)
-		Part.CanCollide = false
-		Part.Position = Vector3.new(0,100,0)
-		Part:BreakJoints()
-		Part.FormFactor = "Custom"
-		Part.Size = Vector3.new(0.2,0.2,0.2)
-		Part.TopSurface = "SmoothNoOutlines"
-		Part.BottomSurface = "SmoothNoOutlines"
-		Part.FrontSurface = "SmoothNoOutlines"
-		Part.BackSurface = "SmoothNoOutlines"
-		Part.RightSurface = "SmoothNoOutlines"
-		Part.LeftSurface = "SmoothNoOutlines"
-		Part.BrickColor = BrickColor.new("Black")
-		local Mesh = Instance.new("BlockMesh",Part)
-		Mesh.Scale = Vector3.new(0.1,0.05,0.625) / 0.2 * Scale
-		local PartWeld = Instance.new("Motor6D")
-		PartWeld.Part0 = Handle
-		PartWeld.Part1 = Part
-		PartWeld.C0 = CFrame.Angles(math.rad(15),0,0) * CFrame.new(Vector3.new(0,0.1,-0.435)*Scale)
-		PartWeld.Parent = Part
-		
-		for i = 0,80,10 do
-		local Part = Instance.new("Part",Model)
-		Part.CanCollide = false
-		Part.Position = Vector3.new(0,100,0)
-		Part:BreakJoints()
-		Part.FormFactor = "Custom"
-		Part.Size = Vector3.new(0.2,0.2,0.2)
-		Part.TopSurface = "SmoothNoOutlines"
-		Part.BottomSurface = "SmoothNoOutlines"
-		Part.FrontSurface = "SmoothNoOutlines"
-		Part.BackSurface = "SmoothNoOutlines"
-		Part.RightSurface = "SmoothNoOutlines"
-		Part.LeftSurface = "SmoothNoOutlines"
-		Part.BrickColor = BrickColor.new("Black")
-		local Mesh = Instance.new("BlockMesh",Part)
-		Mesh.Scale = Vector3.new(0.25,0.15,0.03555*2) / 0.2 * Scale
-		local PartWeld = Instance.new("Motor6D")
-		PartWeld.Part0 = Handle
-		PartWeld.Part1 = Part
-		PartWeld.C0 = CFrame.new(Vector3.new(0,0.15,0.315)*Scale) * CFrame.Angles(math.rad(i-65),0,0) * CFrame.new(Vector3.new(0,0.2,0)*Scale)
-		PartWeld.Parent = Part
-		end
-		
-		local Barrel = Instance.new("Part",Model)
-		Barrel.CanCollide = false
-		Barrel.Position = Vector3.new(0,100,0)
-		Barrel:BreakJoints()
-		Barrel.FormFactor = "Custom"
-		Barrel.Size = Vector3.new(0.2,0.2,0.2)
-		Barrel.TopSurface = "SmoothNoOutlines"
-		Barrel.BottomSurface = "SmoothNoOutlines"
-		Barrel.FrontSurface = "SmoothNoOutlines"
-		Barrel.BackSurface = "SmoothNoOutlines"
-		Barrel.RightSurface = "SmoothNoOutlines"
-		Barrel.LeftSurface = "SmoothNoOutlines"
-		Barrel.BrickColor = BrickColor.new("Black")
-		local Mesh = Instance.new("BlockMesh",Barrel)
-		Mesh.Scale = Vector3.new(0.25,0.2,2) / 0.2 * Scale
-		local BarrelWeld = Instance.new("Motor6D")
-		BarrelWeld.Part0 = Handle
-		BarrelWeld.Part1 = Barrel
-		BarrelWeld.C0 = CFrame.Angles(math.rad(15),0,0) * CFrame.new(Vector3.new(0,0.5,-0.7)*Scale)
-		BarrelWeld.Parent = Barrel
-		
-		local Barrel1 = Barrel
-		
-		local Barrel2 = Instance.new("Part",Model)
-		Barrel2.CanCollide = false
-		Barrel2.Position = Vector3.new(0,100,0)
-		Barrel2:BreakJoints()
-		Barrel2.FormFactor = "Custom"
-		Barrel2.Size = Vector3.new(0.2,0.2,0.2)
-		Barrel2.TopSurface = "SmoothNoOutlines"
-		Barrel2.BottomSurface = "SmoothNoOutlines"
-		Barrel2.FrontSurface = "SmoothNoOutlines"
-		Barrel2.BackSurface = "SmoothNoOutlines"
-		Barrel2.RightSurface = "SmoothNoOutlines"
-		Barrel2.LeftSurface = "SmoothNoOutlines"
-		Barrel2.BrickColor = BrickColor.new("Really black")
-		local Mesh = Instance.new("BlockMesh",Barrel2)
-		Mesh.Scale = Vector3.new(0.25,0.25,2) / 0.2 * Scale
-		local Barrel2Weld = Instance.new("Motor6D")
-		Barrel2Weld.Part0 = Barrel
-		Barrel2Weld.Part1 = Barrel2
-		Barrel2Weld.C0 = CFrame.new(Vector3.new(0,0.225,0)*Scale)
-		Barrel2Weld.Parent = Barrel2
-		
-		local RealBarrel = Instance.new("Part",Model)
-		RealBarrel.CanCollide = false
-		RealBarrel.Position = Vector3.new(0,100,0)
-		RealBarrel:BreakJoints()
-		RealBarrel.FormFactor = "Custom"
-		RealBarrel.Size = Vector3.new(0.2,0.2,0.2)
-		RealBarrel.TopSurface = "SmoothNoOutlines"
-		RealBarrel.BottomSurface = "SmoothNoOutlines"
-		RealBarrel.FrontSurface = "SmoothNoOutlines"
-		RealBarrel.BackSurface = "SmoothNoOutlines"
-		RealBarrel.RightSurface = "SmoothNoOutlines"
-		RealBarrel.LeftSurface = "SmoothNoOutlines"
-		RealBarrel.BrickColor = BrickColor.new("Dark grey metallic")
-		local Mesh = Instance.new("CylinderMesh",RealBarrel)
-		Mesh.Scale = Vector3.new(0.2,2,0.2) / 0.2 * Scale
-		local RealBarrelWeld = Instance.new("Motor6D")
-		RealBarrelWeld.Part0 = Barrel
-		RealBarrelWeld.Part1 = RealBarrel
-		RealBarrelWeld.C0 = CFrame.new(Vector3.new(0,0.1,-0.01)*Scale) * CFrame.Angles(math.rad(-90),0,0)
-		RealBarrelWeld.Parent = RealBarrel
-		
-		for i = 1,75,15 do
-		local Part = Instance.new("Part",Model)
-		Part.CanCollide = false
-		Part.Position = Vector3.new(0,100,0)
-		Part:BreakJoints()
-		Part.FormFactor = "Custom"
-		Part.Size = Vector3.new(0.2,0.2,0.2)
-		Part.TopSurface = "SmoothNoOutlines"
-		Part.BottomSurface = "SmoothNoOutlines"
-		Part.FrontSurface = "SmoothNoOutlines"
-		Part.BackSurface = "SmoothNoOutlines"
-		Part.RightSurface = "SmoothNoOutlines"
-		Part.LeftSurface = "SmoothNoOutlines"
-		Part.BrickColor = BrickColor.new("Black")
-		local Mesh = Instance.new("BlockMesh",Part)
-		Mesh.Scale = Vector3.new(0.05,0.065,0.05) / 0.2 * Scale
-		local PartWeld = Instance.new("Motor6D")
-		PartWeld.Part0 = Handle
-		PartWeld.Part1 = Part
-		PartWeld.C0 = CFrame.new(Vector3.new(0,0.525,-0.515)*Scale) * CFrame.Angles(math.rad(i),0,0) * CFrame.new(Vector3.new(0,0,0.2)*Scale)
-		PartWeld.Parent = Part
-		end
-		
-		local Part = Instance.new("Part",Model)
-		Part.CanCollide = false
-		Part.Position = Vector3.new(0,100,0)
-		Part:BreakJoints()
-		Part.FormFactor = "Custom"
-		Part.Size = Vector3.new(0.2,0.2,0.2)
-		Part.TopSurface = "SmoothNoOutlines"
-		Part.BottomSurface = "SmoothNoOutlines"
-		Part.FrontSurface = "SmoothNoOutlines"
-		Part.BackSurface = "SmoothNoOutlines"
-		Part.RightSurface = "SmoothNoOutlines"
-		Part.LeftSurface = "SmoothNoOutlines"
-		Part.BrickColor = BrickColor.new("Really black")
-		local Mesh = Instance.new("BlockMesh",Part)
-		Mesh.Scale = Vector3.new(0.05,0.11,0.1) / 0.2 * Scale
-		local PartWeld = Instance.new("Motor6D")
-		PartWeld.Part0 = Barrel2
-		PartWeld.Part1 = Part
-		PartWeld.C0 = CFrame.new(Vector3.new(0.06,0.135,0.925)*Scale)
-		PartWeld.Parent = Part
-		
-		local Part = Instance.new("Part",Model)
-		Part.CanCollide = false
-		Part.Position = Vector3.new(0,100,0)
-		Part:BreakJoints()
-		Part.FormFactor = "Custom"
-		Part.Size = Vector3.new(0.2,0.2,0.2)
-		Part.TopSurface = "SmoothNoOutlines"
-		Part.BottomSurface = "SmoothNoOutlines"
-		Part.FrontSurface = "SmoothNoOutlines"
-		Part.BackSurface = "SmoothNoOutlines"
-		Part.RightSurface = "SmoothNoOutlines"
-		Part.LeftSurface = "SmoothNoOutlines"
-		Part.BrickColor = BrickColor.new("Really black")
-		local Mesh = Instance.new("BlockMesh",Part)
-		Mesh.Scale = Vector3.new(0.05,0.11,0.1) / 0.2 * Scale
-		local PartWeld = Instance.new("Motor6D")
-		PartWeld.Part0 = Barrel2
-		PartWeld.Part1 = Part
-		PartWeld.C0 = CFrame.new(Vector3.new(-0.06,0.135,0.925)*Scale)
-		PartWeld.Parent = Part
-		
-		local Part = Instance.new("Part",Model)
-		Part.CanCollide = false
-		Part.Position = Vector3.new(0,100,0)
-		Part:BreakJoints()
-		Part.FormFactor = "Custom"
-		Part.Size = Vector3.new(0.2,0.2,0.2)
-		Part.TopSurface = "SmoothNoOutlines"
-		Part.BottomSurface = "SmoothNoOutlines"
-		Part.FrontSurface = "SmoothNoOutlines"
-		Part.BackSurface = "SmoothNoOutlines"
-		Part.RightSurface = "SmoothNoOutlines"
-		Part.LeftSurface = "SmoothNoOutlines"
-		Part.BrickColor = BrickColor.new("Really black")
-		local Mesh = Instance.new("BlockMesh",Part)
-		Mesh.Scale = Vector3.new(0.025,0.1,0.1) / 0.2 * Scale
-		local PartWeld = Instance.new("Motor6D")
-		PartWeld.Part0 = Barrel2
-		PartWeld.Part1 = Part
-		PartWeld.C0 = CFrame.new(Vector3.new(0,0.135,-0.925)*Scale)
-		PartWeld.Parent = Part
-		
-		local Part = Instance.new("Part",Model)
-		Part.CanCollide = false
-		Part.Position = Vector3.new(0,100,0)
-		Part:BreakJoints()
-		Part.FormFactor = "Custom"
-		Part.Size = Vector3.new(0.2,0.2,0.2)
-		Part.Transparency = 1
-		Part.TopSurface = "SmoothNoOutlines"
-		Part.BottomSurface = "SmoothNoOutlines"
-		Part.FrontSurface = "SmoothNoOutlines"
-		Part.BackSurface = "SmoothNoOutlines"
-		Part.RightSurface = "SmoothNoOutlines"
-		Part.LeftSurface = "SmoothNoOutlines"
-		Part.BrickColor = BrickColor.new("Really black")
-		local Mesh = Instance.new("BlockMesh",Part)
-		Mesh.Scale = Vector3.new(0.1,0.1,0.1) / 0.2 * Scale
-		local PartWeld = Instance.new("Motor6D")
-		PartWeld.Part0 = Barrel
-		PartWeld.Part1 = Part
-		PartWeld.C0 = CFrame.new(Vector3.new(0,0,-5)*Scale)
-		PartWeld.Parent = Part
-		
-		local Light = Instance.new("PointLight",Part)
-		Light.Color = BrickColor.new("Gold").Color
-		Light.Enabled = true
-		Light.Shadows = true
-		Light.Brightness = 0
-		Light.Range = 6
-		
-		local Part = Instance.new("Part",Model)
-		Part.Material = "Neon"
-		Part.CanCollide = false
-		Part.Position = Vector3.new(0,100,0)
-		Part:BreakJoints()
-		Part.FormFactor = "Custom"
-		Part.Size = Vector3.new(0.2,0.2,0.2)
-		Part.TopSurface = "SmoothNoOutlines"
-		Part.BottomSurface = "SmoothNoOutlines"
-		Part.FrontSurface = "SmoothNoOutlines"
-		Part.BackSurface = "SmoothNoOutlines"
-		Part.RightSurface = "SmoothNoOutlines"
-		Part.LeftSurface = "SmoothNoOutlines"
-		Part.BrickColor = BrickColor.new("Bright yellow")
-		Part.Transparency = 0.25
-		local RecoilMesh = Instance.new("SpecialMesh",Part)
-		RecoilMesh.MeshType = "FileMesh"
-		RecoilMesh.MeshId = "http://www.roblox.com/Asset/?id=1323306"
-		RecoilMesh.TextureId = "http://www.roblox.com/Asset/?id=98896228"
-		RecoilMesh.Scale = Vector3.new(0.175,0,0.175) * Scale
-		local PartWeld = Instance.new("Motor6D")
-		PartWeld.Part0 = RealBarrel
-		PartWeld.Part1 = Part
-		PartWeld.C0 = CFrame.new(Vector3.new(0,0.95,0)*Scale)
-		PartWeld.Parent = Part
-		
-		function ShootBullet(Target,barrel)
-		local barrel = barrel or Barrel
-		local Bullet = Instance.new("Part",Workspace)
-		Barrel.CanCollide = false
-		Bullet.FormFactor = "Custom"
-		Bullet.Size = Vector3.new(0.2,0.2,5)*Scale
-		Bullet.TopSurface = "Smooth"
-		Bullet.BottomSurface = "Smooth"
-		Bullet.Anchored = true
-		Bullet.CanCollide = false
-		Bullet.CFrame = CFrame.new((barrel.CFrame*CFrame.new(0,0,-barrel.Size.Z*barrel.Mesh.Scale.Z/2)).p,Target)*CFrame.new(0,0,-Bullet.Size.Z/2)
-		Bullet.Transparency = 0.1
-		Bullet.BrickColor = BrickColor.new("Gold")
-		--[[local Mesh = Instance.new("SpecialMesh",Bullet)
-		Mesh.MeshType = "FileMesh"
-		Mesh.Scale = Vector3.new(0.5,0.5,0.2)
-		Mesh.MeshId = "http://www.roblox.com/asset/?id=2697549"
-		--Mesh.TextureId = "http://www.roblox.com/asset/?id=2697544"]]
-		local Mesh = Instance.new("BlockMesh",Bullet)
-		Mesh.Scale = Vector3.new(0.2,0.2,5)*Scale/Bullet.Size
-		IgnoreList[#IgnoreList+1] = Bullet
-		RenderStepped:wait()
-		for i = Speed,1000,Speed do -- Loop to do the bullet movement and stuff.
-		local ray,Hit,Pos,SurfaceNormal;
-		ray = Ray.new(Bullet.Position,((Bullet.CFrame*CFrame.Angles(math.rad(-Gravity),0,0)*CFrame.new(0,0,-Speed)).p-Bullet.Position).unit*Speed)
-		Hit,Pos,SurfaceNormal = Workspace:FindPartOnRayWithIgnoreList(ray,IgnoreList)
-		Bullet.CFrame = Bullet.CFrame*CFrame.Angles(math.rad(-Gravity),0,0)*CFrame.new(0,0,-Speed)
-		if Hit ~= nil then
-		local Hum = Hit.Parent:FindFirstChild("Humanoid") or Hit.Parent.Parent:FindFirstChild("Humanoid") or (Hit.Parent.Parent.Parent ~= nil and Hit.Parent.Parent.Parent:FindFirstChild("Humanoid"))
-		if Hum ~= nil then
-		Hum:TakeDamage((((Gangster and math.random(0,0) or math.random(0,0))*Scale)/100)*Hum.MaxHealth)
-		end
-		break
-		end
-		RenderStepped:wait()
-		end
-		Bullet:Destroy()
-		end
-		
-		Mouse.Button1Down:connect(function()
-		if not Down and not DB then
-		Down = true
-		while Down do
-		if Humanoid.Health == 0 then break end
-		if not DB then
-		DB = true
-		local Sound = Instance.new("Sound",Barrel)
-		Sound.SoundId = "http://www.roblox.com/Asset/?id=165946426" -- 132373574
-		Sound.Volume = 5*Scale
-		Sound.Pitch = (math.random(70,110)/100)/((Scale < 0.25 and 0.25) or (Scale > 4 and 4) or Scale)
-		Sound:Play()
-		Spawn(function()
-		ShootBullet(Mouse.Hit.p,Barrel1)
-		end)
-		RecoilMesh.VertexColor = Vector3.new(1,math.random(160,245)/255,20/255)
-		PartWeld.C0 = PartWeld.C0 * CFrame.Angles(0,math.rad(math.random(-40,40)),0)
-		local Shell = Instance.new("Part",Workspace)
-		Shell.FormFactor = "Custom"
-		Shell.BrickColor = BrickColor.new("Bright yellow")
-		Shell.Size = Vector3.new(0.2,0.5,0.2)*Scale
-		Shell.CFrame = Barrel.CFrame*CFrame.new(0.5,0.5,0)*CFrame.Angles(math.rad(-90),0,0)
-		Shell.Velocity = ((Barrel.CFrame*CFrame.new(5,0,math.random(-2,2))).p-Barrel.CFrame.p)*5*Scale
-		local Mesh = Instance.new("CylinderMesh",Shell)
-		Mesh.Scale = Vector3.new(0.2,0.5,0.2)*Scale/Shell.Size
-		Spawn(function()
-		wait(5)
-		Shell:Destroy()
-		end)
-		for i = 1,20,7.5 do
-		character1.Reanimate.FPart.Position = mouse.Hit.p
-		RotationOffset = RotationOffset*CFrame.Angles(math.rad(7.5),0,0)
-		Part1Joint = Part1Joint*CFrame.new(Vector3.new(0,-0.15,0)*Scale)
-		Barrel2Weld.C0 = Barrel2Weld.C0*CFrame.new(Vector3.new(0,0,0.15)*Scale)
-		Light.Brightness = Light.Brightness+38
-		RecoilMesh.Scale = RecoilMesh.Scale+(Vector3.new(0,0.375,0)*Scale)
-		RenderStepped:wait()
-		end
-		wait(0.02)
-		for i = 1,20,3.75 do
-		character1.Reanimate.FPart.Position = mouse.Hit.p
-		RotationOffset = RotationOffset*CFrame.Angles(math.rad(-3.75),0,0)
-		Part1Joint = Part1Joint*CFrame.new(Vector3.new(0,0.075,0)*Scale)
-		Barrel2Weld.C0 = Barrel2Weld.C0*CFrame.new(Vector3.new(0,0,-0.075)*Scale)
-		Light.Brightness = Light.Brightness-19
-		RecoilMesh.Scale = RecoilMesh.Scale+(Vector3.new(0,-0.1875,0)*Scale)
-		RenderStepped:wait()
-		end
-		wait(0.02)
-		DB = false
-		end
-		end
-		end
-		end)
-		
-		Mouse.Button1Up:connect(function()
-		Down = false
-		end)
-		
-		Mouse.KeyDown:connect(function(Key)
-		if Key:lower() == "g" and not DB then
-		DB = true
-		if Gangster == true then
-		for i = 1,70,5 do
-		RotationOffset = RotationOffset*CFrame.Angles(0,math.rad(-5),0)
-		RenderStepped:wait()
-		end
-		Gangster = false
-		else
-		for i = 1,70,5 do
-		RotationOffset = RotationOffset*CFrame.Angles(0,math.rad(5),0)
-		RenderStepped:wait()
-		end
-		Gangster = true
-		end
-		DB = false
-		end
-		end)
-		
-		local Weld = Instance.new("Weld")
-		Weld.Part0 = Torso
-		Weld.Part1 = Character["Right Arm"]
-		Weld.Parent = Torso
-		
-		local Weld2 = Instance.new("Weld")
-		Weld2.Part0 = Torso
-		Weld2.Part1 = Character.Head
-		Weld2.Parent = Torso
-		
-		local RA = Character["Right Arm"]
-		
-		game:GetService("RunService"):BindToRenderStep("Pistol",Enum.RenderPriority.Character.Value,function()
-		local Point = Torso.CFrame:vectorToObjectSpace(Mouse.Hit.p-Torso.CFrame.p)
-		if Point.Z > 0 then
-		if Point.X > 0 then
-		Torso.CFrame = CFrame.new(Torso.Position,Vector3.new(Mouse.Hit.X,Torso.Position.Y,Mouse.Hit.Z))*CFrame.Angles(0,math.rad(90),0)
-		elseif Point.X < 0 then
-		Torso.CFrame = CFrame.new(Torso.Position,Vector3.new(Mouse.Hit.X,Torso.Position.Y,Mouse.Hit.Z))*CFrame.Angles(0,math.rad(-90),0)
-		end
-		end
-		
-		local CFr = (Torso.CFrame*Part0Joint):toObjectSpace(CFrame.new((Torso.CFrame*Part0Joint).p,Mouse.Hit.p))--RayEnd))
-		Weld.C0 = Part0Joint * (CFr-CFr.p) * RotationOffset
-		Weld.C1 = Part1Joint
-		Weld.Part0 = Torso
-		Weld.Part1 = RA
-		local CFr = (Torso.CFrame*Part0JointHead):toObjectSpace(CFrame.new((Torso.CFrame*Part0JointHead).p,Mouse.Hit.p))--RayEnd))
-		Weld2.C0 = Part0JointHead * (CFr-CFr.p) * RotationOffsetHead
-		Weld2.C1 = Part1JointHead
-		Weld2.Part0 = Torso
-		Weld2.Part1 = Character.Head
-		local Last = Scale
-		Scale = game.Players.LocalPlayer.Character.Torso.Size.X/2*(game.Players.LocalPlayer.Character.Torso:FindFirstChild("ScaleInserted") ~= nil and game.Players.LocalPlayer.Character.Torso:FindFirstChild("ScaleInserted").Scale.Z or 1)*0.8
-		Speed = 20*Scale
-		if Scale ~= Last then
-		Part0Joint = CFrame.new(Vector3.new(1,0.75,0)*Scale*1.25)
-		Part1Joint = CFrame.new(Vector3.new(-0.5,0.75,0)*Scale*1.25)
-		Part0JointHead = CFrame.new(Vector3.new(0,1,0)*Scale*1.25)
-		Part1JointHead = CFrame.new(Vector3.new(0,-0.5,0)*Scale*1.25)
-		end
-	end)
-
-	function useCommand.fly()
-		FLYING = false
-		cmdlp.Character.Humanoid.PlatformStand = false
-		wait()
-		opx("-","You are now flying")
-		sFLY()
-		speedofthefly = permflyspeed
-	end
-
+function useCommand.fly()
+	FLYING = false
+	cmdlp.Character.Humanoid.PlatformStand = false
+	wait()
+	opx("-","You are now flying")
+	sFLY()
+	speedofthefly = permflyspeed
+end
 
 function useCommand.vehiclefly()
 	FLYING = false
@@ -9824,10 +8378,10 @@ end
 
 function useCommand.runafter()
 	if arguments[2] == "on" then
-		opx("-","NugzyCMD will now run after rejoin")
+		opx("-","Nugzy CMD will now run after rejoin")
 		KeepCMDXOn = true
 		if KeepCMDXOn and syn.queue_on_teleport then
-			syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/Source"))()')
+			syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/source"))()')
 		end
 		updatesaves()
 	elseif arguments[2] == "off" then
@@ -10307,7 +8861,7 @@ function BodyAimbot(aimbotarg)
 	if aimbotarg == "Team" then Teamed = true else Teamed = false end
 	local Hotkey = 50
 	AimbotIs = true
-	opx("+","Aimbot enabled (Hold down Left Ctrl to aim)")
+	opx("-","Aimbot enabled (Hold down Left Ctrl to aim)")
 	if AimbotRunAlready then return end
 	AimbotRunAlready = true
 	cmdm.KeyDown:connect(function(Key)
@@ -11141,7 +9695,7 @@ function useCommand.singinfo()
 	Step 5: Compress the lines to avoid whitespace errors\
 	Step 6: Put your compressed text into a raw data uploading site such as pastebin or hastebin\
 	Step 7: Insert the link into the sing command\
-	To see a sample of what to do, visit: https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/others/sing/")
+	To see a sample of what to do, visit: https://raw.githubusercontent.com/CMD-X/CMD-X/master/others/sing/")
 end
 
 stopSingMid = false
@@ -11160,7 +9714,7 @@ function useCommand.sing()
 		["diamonds"] = true
 	}
 	if check[string.lower(arguments[2])] then
-		getSong = "https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/sing/"..string.lower(arguments[2])
+		getSong = "https://raw.githubusercontent.com/CMD-X/CMD-X/master/others/sing/"..string.lower(arguments[2])
 	else
 		getSong = arguments[2]
 	end
@@ -11312,7 +9866,6 @@ end
 function useCommand.antiwrldsgui()
 	opx("-","antiwrldsGUI loading")
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CMD-X/CMD-X/master/others/antiwrldsgui/main.lua'),true))()
-    opx("*","Not currently working")
 	opx("-","antiwrldsGUI loaded")
 end
 
@@ -13971,9 +12524,9 @@ function useCommand.credits()
 	opx("-","Opened credits")
 	opxL("Credits","Note: Some discords may be out of date due to consistent changing;\
 	Owner - "..DevCords[1].."\
-	Dev - "..DevCords[2].."\
+    Owner - "..DevCords[2].."\
 	Former Founder - pigeon\
-	Thank you to IY for some functions inside NugzyCMD")
+    ")
 end
 
 function useCommand.outputlarger()
@@ -15098,30 +13651,6 @@ function useCommand.copyoutput()
 	end
 end
 
-function useCommand.god(args, speaker)
-	local Cam = workspace.CurrentCamera
-	local Pos, Char = Cam.CFrame, speaker.Character
-	local Human = Char and Char.FindFirstChildWhichIsA(Char, "Humanoid")
-	local nHuman = Human.Clone(Human)
-	nHuman.Parent, speaker.Character = Char, nil
-	nHuman.SetStateEnabled(nHuman, 15, false)
-	nHuman.SetStateEnabled(nHuman, 1, false)
-	nHuman.SetStateEnabled(nHuman, 0, false)
-	nHuman.BreakJointsOnDeath, Human = true, Human.Destroy(Human)
-	speaker.Character, Cam.CameraSubject, Cam.CFrame = Char, nHuman, wait() and Pos
-	nHuman.DisplayDistanceType = Enum.HumanoidDisplayDistanceType.None
-	local Script = Char.FindFirstChild(Char, "Animate")
-	if Script then
-		Script.Disabled = true
-		wait()
-	end
-	nHuman.Health = nHuman.MaxHealth
-	function useCommand.ungod()
-		Script.Disabled = false
-	end
-
-end
-
 function useCommand.copypath()
 	if arguments[2] then
 		for i,v in pairs(workspace:GetDescendants()) do
@@ -15894,7 +14423,7 @@ function useCommand.rejoinexecute()
 	syn.queue_on_teleport([[
 		game:GetService('ReplicatedFirst'):RemoveDefaultLoadingScreen()
 		repeat wait(.1) until game:GetService('Players').LocalPlayer
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/Source", true))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/source", true))()
 	]])
 	opx("-","Rejoining game")
 	game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, game.JobId, cmdp)
@@ -16410,7 +14939,7 @@ function useCommand.rejoinrefreshexecute()
 			end)
 			playeradded:Disconnect()
 		end)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/Source", true))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/source", true))()
 	]], c.X, c.Y, c.Z))
 	opx("-","Rejoining game")
 	game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, game.JobId, cmdp)
@@ -17635,7 +16164,7 @@ end)
 if not AntiCheat.PrintingOff then
 	local StarterGui = game:GetService("StarterGui")
 	StarterGui:SetCore("ChatMakeSystemMessage", {
-		Text = "Welcome to NugzyCMD, "..cmdlp.Name..".";
+		Text = "Welcome to Nugzy CMD, "..cmdlp.Name..".";
 		Color = Color3.fromRGB(50, 50, 50);
 		Font = Enum.Font.SourceSansBold;TextSize = 25
 	})
@@ -17969,5 +16498,4 @@ while true do
 		break
 	end
 	task.wait()
-end
 end

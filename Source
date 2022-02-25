@@ -16521,7 +16521,7 @@ end
 
 for _,v in pairs(cmdp:GetPlayers()) do
 	if Devs[v.Name] then
-		opx("-",v.Name.." is in your server ("..Devs[v.Name].." of NugzyCMD)")
+		opx("-",v.Name.." is in your server ("..Devs[v.Name].." of CMD-X)")
 		RGBDev(v)
 	elseif Donors[v.Name] then
 		opx("-",v.Name.." is in your server ("..Tier[Donors[v.Name]].Tag..")")
@@ -16531,7 +16531,7 @@ end
 
 cmdp.PlayerAdded:Connect(function(v)
 	if Devs[v.Name] then
-		opx("-",v.Name.." is in your server ("..Devs[v.Name].." of NugzyCMD)")
+		opx("-",v.Name.." is in your server ("..Devs[v.Name].." of CMD-X)")
 		RGBDev(v)
 	elseif Donors[v.Name] then
 		opx("-",v.Name.." is in your server ("..Tier[Donors[v.Name]].Tag..")")

@@ -2550,6 +2550,8 @@ CMDS.commands = {
 	["amogus"] = "makes yourself look sus",
 	["hamsterball"] = "check it out lol",
 	["invisible2"] = "Another invisible method",
+	["uninvisible2"] = "Disable invisible2",
+	["visiblw2"] = "Disable invisible2",
 }
 CMDS.usage = {
 	["hamsterball"] = "(meh)",
@@ -2795,8 +2797,11 @@ CMDS.usage = {
 	["alias"] = "(new_name) (cmd)",
 	["clicktplimit"] = "(num)",
 	["invisible2"] = "(Use e to toggle)",
+	["uninvisible2"] = "(meh)",
+	["visible2"] = "(meh)",
 }
 CMDS.aliases = {
+	["uninvisible2"] = "visible2",
 	["invis2"] = "invisible2",
 	["8ballpu"] = "eightballpu",
 	["8ballpr"] = "eightballpr",
@@ -16481,6 +16486,7 @@ local ScriptStarted = false
 local Keybind = "E" --Set to whatever you want, has to be the name of a KeyCode Enum.
 local Transparency = true --Will make you slightly transparent when you are invisible. No reason to disable.
 local NoClip = false --Will make your fake character no clip.
+local usage = false
 
 local Player = game:GetService("Players").LocalPlayer
 local RealCharacter = Player.Character or Player.CharacterAdded:Wait()
@@ -16621,7 +16627,15 @@ game:GetService("UserInputService").InputBegan:Connect(
 local Sound = Instance.new("Sound",game:GetService("SoundService"))
 Sound.SoundId = "rbxassetid://232127604"
 Sound:Play()
-game:GetService("StarterGui"):SetCore("SendNotification",{["Title"] = "Invisible Toggle Loaded",["Text"] = "Press "..Keybind.." to become change visibility.",["Duration"] = 20,["Button1"] = "Okay."})
+game:GetService("StarterGui"):SetCore("SendNotification",{["Title"] = "Made by Nugzy",["Text"] = "Press "..Keybind.." to become change visibility.",["Duration"] = 20,["Button1"] = "Okay."})
+
+function useCommand.visible2 ()
+
+	Keybind = "`"
+	IsInvisible = false
+
+end
+
 end
 
 function useCommand.drawingnew()

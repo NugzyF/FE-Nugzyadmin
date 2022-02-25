@@ -1282,6 +1282,7 @@ function sFLY(vfly)
 	local CONTROL = {F = 0, B = 0, L = 0, R = 0, Q = 0, E = 0}
 	local lCONTROL = {F = 0, B = 0, L = 0, R = 0, Q = 0, E = 0}
 	local SPEED = 0
+
 	local function FLY()
 		FLYING = true
 		local BG = Instance.new('BodyGyro', T)
@@ -9761,18 +9762,17 @@ function useCommand ()
 		Part0JointHead = CFrame.new(Vector3.new(0,1,0)*Scale*1.25)
 		Part1JointHead = CFrame.new(Vector3.new(0,-0.5,0)*Scale*1.25)
 		end
-		end)
-end
-function useCommand.fly()
-	FLYING = false
+		end) 
+	end
 
-	cmdlp.Character.Humanoid.PlatformStand = false
-	
-	wait()
-	opx ("-" , "You are now flying!")
-	sFLY()
-	speedofthefly = permflyspeed
- end
+	function useCommand.fly()
+		FLYING = false
+		cmdlp.Character.Humanoid.PlatformStand = false
+		wait()
+		opx("-","You are now flying")
+		sFLY()
+		speedofthefly = permflyspeed
+	end
 
 
 function useCommand.vehiclefly()

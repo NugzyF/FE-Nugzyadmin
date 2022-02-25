@@ -4730,10 +4730,6 @@ opx("*","Use E to toggle and untoggle")
 
 end
 
-function useCommand.uninvisible2()
-	insttance.destroy("Part",workspace)
-end
-
 function useCommand.defaulthipheight()
 	cmdlp.Character.Humanoid.HipHeight = saveHip
 	opx("-","Hipheight set to default ("..saveHip..")")

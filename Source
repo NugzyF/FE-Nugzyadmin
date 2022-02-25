@@ -9767,9 +9767,7 @@ function useCommand.fly()
 	FLYING = false
 	cmdlp.Character.Humanoid.PlatformStand = false
 	wait()
-	
 	opx ("-" , "You are now flying!")
-
 	sFLY()
 	speedofthefly = permflyspeed
 end

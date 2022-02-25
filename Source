@@ -16388,6 +16388,8 @@ swait()
 end
 end)()
 
+opx("*" , "Might not work for some servers!")
+
 end
 
 function useCommand.drawingnew()

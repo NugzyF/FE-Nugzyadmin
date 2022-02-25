@@ -9765,7 +9765,7 @@ function useCommand ()
 	end)
 
 	function useCommand.fly()
-		FLYING = true
+		FLYING = false
 		cmdlp.Character.Humanoid.PlatformStand = false
 		wait()
 		opx("-","You are now flying")

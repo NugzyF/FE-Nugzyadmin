@@ -9763,14 +9763,16 @@ function useCommand ()
 		end)
 end
 
-function useCommand.fly()
-	FLYING = false
-	cmdlp.Character.Humanoid.PlatformStand = false
-	wait()
-	opx ("-" , "You are now flying!")
-	sFLY()
-	speedofthefly = permflyspeed
-end
+--function useCommand.fly()
+	--FLYING = false
+
+	--cmdlp.Character.Humanoid.PlatformStand = false
+	
+	--wait()
+	--opx ("-" , "You are now flying!")
+	--sFLY()
+	--speedofthefly = permflyspeed
+--end
 
 function useCommand.vehiclefly()
 	FLYING = false

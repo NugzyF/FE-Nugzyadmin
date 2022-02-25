@@ -12595,7 +12595,7 @@ function useCommand.credits()
 	Owner - "..DevCords[1].."\
 	Dev - "..DevCords[2].."\
 	Former Founder - pigeon\
-	Thank you to IY for some functions inside NugzyCMD\
+	Thank you to IY for some functions inside NugzyCMD")
 end
 
 function useCommand.outputlarger()

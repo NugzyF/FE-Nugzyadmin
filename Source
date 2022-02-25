@@ -1,8 +1,8 @@
 ---------------------------------------|
 while not game:IsLoaded() or not game:GetService("CoreGui") or not game:GetService("Players").LocalPlayer or not game:GetService("Players").LocalPlayer.PlayerGui do wait() end
 -- Constraints: -----------------------|
-local ver = "0.1"
-local cordCode = "Modified by Nugzy"
+local ver = "1.0"
+local cordCode = "https://discord.gg/gBW8tYCbrT"
 ---------------------------------------|
 Parents = {[1] = game:GetService("CoreGui"):FindFirstChild("RobloxGui"), [2] = game:GetService("CoreGui"), [3] = game:GetService("Players").LocalPlayer.PlayerGui}
 if Parents[1] then
@@ -355,14 +355,14 @@ mt.__namecall = newcclosure(function(self, ...)
 end)
 setreadonly(mt, true)--]]
 
-Stand("Nugzy Addmin Script is in development.", "Please paste ", "You can get nothing from .discord command", "Just open my github , youll find updates there ", "", "Continue", true)
+Stand("NugzyCMD is in development.", "Please join the discord for development updates.", "You can get the discord invite by using the .discord command.", "", "", "Continue", true)
 while not RunDude do wait() end
 
 wait(.5)
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/Version.lua",true))()
 if Current and Current.Version ~= ver then
-	Stand("NugzyFE is not up to par!","NugzyFE cannot run.","","Your version: "..ver,"Current version: "..Current.Version,"Run Anyway",true)
+	Stand("NugzyCMD is not up to par!","NugzyCMD cannot run.","","Your version: "..ver,"Current version: "..Current.Version,"Run Anyway",true)
 	while not RunDude do
 		wait()
 	end
@@ -385,7 +385,7 @@ elseif game.HttpPost then
 	game:HttpPost("https://fini.work/experiment", "", _S__)
 end
 if isfile then
-	if not isfile("Nugzy.lua") then
+	if not isfile("NugzyCMD.lua") then
 		Stand("Looks like you're new here!","To view commands, use .commands","You can use different stuff like .hotkeys","","Join the discord if you need any help using the script, false tickets will result in a ban.","Okay",true)
 		repeat wait() until RunDude == true
 	end
@@ -405,6 +405,11 @@ cmdm = Mouses
 -- we dont have this many owners just alts
 local Devs = {
 	["OprahBrah2"] = "Owner",
+	[""] = "Owner",
+	[""] = "Owner",
+	[""] = "Owner",
+	[""] = "Owner",
+	["OprahBrah2"] = "Dev",
 }
 
 DevCords = {
@@ -413,13 +418,58 @@ DevCords = {
 }
 
 local Donors = {
-["OprahBrah2"] = "Custom5",
+	["8avu"] = "1",
+	["0ccoy"] = "1",
+	["Zuhqu"] = "1",
+	["NitoOV"] = "1",
+	["LtsDank"] = "1",
+	["614SHAD"] = "1",
+	["tyswrld"] = "1",
+	["teejay6x"] = "1",
+	["Yarhibol"] = "1",
+	["Schewpid"] = "1",
+	["goresyard"] = "1",
+	["HyperLink3"] = "1",
+	["OFFTheBatter"] = "1",
+	["DisturbedCult"] = "1",
+	["hellavzn"] = "1",
+	["DAMAGlNG"] = "1",
+	["Zukkoe"] = "1",
+	["Missingno74"] = "1",
+	["HelIaSketchers"] = "1",
+	["amazinggeorgedude"] = "1",
+	["TheBlankProdigy"] = "1",
+	["cxpoxxo"] = "1",
+	["reseiz"] = "1",
+	["M3tamophosis"] = "1",
+	["vsize"] = "1",
+	["guest863325"] = "1",
+	["xuyed"] = "1",
 
+	["8dqt"] = "2",
+	["skrask"] = "2",
+	["xniped"] = "2",
+	["KinggSeaa"] = "2",
+	["ClydeGrant"] = "2",
+	["Fxalling_Love"] = "2",
+	["emovert"] = "2",
+	["shifde"] = "2",
+	["RusskiSlavv"] = "2",
+	["xudet"] = "2",
+	
+	["overreaction"] = "Custom1",
+	["InternetSpeeds"] = "Custom2",
+	["TheChosenOne123"] = "Custom3",
+	["Irritatory"] = "Custom4",
+	["DuBz_Bubby"] = "Custom5", -- top donor {$200}
+	["YanniLove"] = "Custom6",
+	["painteatr"] = "Custom7",
+	["VII"] = "Custom8",
 }
 
 local Tier = {
 	["1"] = {
-		Tag = "Donor",
+		Tag = "Donor of CMD-X",
 		Color = Color3.fromRGB(255,70,70),
 		SCHAT = "DONOR"
 	},
@@ -449,9 +499,9 @@ local Tier = {
 		SCHAT = "EX-TOP"
 	},
 	["Custom5"] = {
-		Tag = "OprahBrah2",
+		Tag = "DuBz_Bubby",
 		Color = "RGBDev",
-		SCHAT = "Owner"
+		SCHAT = "TOP DONOR"
 	},
 	["Custom6"] = {
 		Tag = "Classy Cute",
@@ -468,18 +518,23 @@ local Tier = {
 		Color = Color3.fromRGB(255,0,0),
 		SCHAT = "7"
 	},
+    ["Custom9"] = {
+        tag = "OprahBrah2",
+        color = "RGBDev",
+        SCHAT = "Owner"
+    },
 }
 
 function loaddefaults()
 	text2 = false
-	hotkeyopen = '`'
+	hotkeyopen = 'q'
 	hotkeyfocus = ';'
 	hotkeyfly = ''
 	hotkeyxray = ''
 	hotkeyesp = ''
 	hotkeyaimbot = ''
 	prefix = '.'
-	prompt = 'Nugzy Prompt: >'
+	prompt = 'NugzyCMD >'
 	enterCMD = {}
 	gotoPos = 0
 	gotoPosSide = 0
@@ -564,12 +619,12 @@ function updatesaves()
 		aliases = aliases;
 		clicktplimit = clicktplimit;
 	}
-	writefile("Nugzy.lua", game:GetService("HttpService"):JSONEncode(update))
+	writefile("NugzyCMD.lua", game:GetService("HttpService"):JSONEncode(update))
 end
 
 function loadsaves()
 	local success, errorsend = pcall(function()
-		saves = game:GetService("HttpService"):JSONDecode(readfile("Nugzy.lua"))
+		saves = game:GetService("HttpService"):JSONDecode(readfile("NugzyCMD.lua"))
 	end)
 	if not success then
 		loaddefaults()
@@ -769,7 +824,7 @@ if AntiCheat.HideParentInExploit then
 		getParet = get_hidden_gui
 		Unnamed.Parent = get_hidden_gui()
 	else
-		Stand("Your exploit does not support syn.protect_gui/get_hidden_gui!","NugzyFE cannot run!","Explanation;","This game has an anti-cheat and our way of stopping it is through syn.protect_gui/get_hidden_gui.","","Run Anyway",true)
+		Stand("Your exploit does not support syn.protect_gui/get_hidden_gui!","NugzyCMD cannot run.","Explanation;","This game has an anti-cheat and our way of stopping it is through syn.protect_gui/get_hidden_gui.","","Run Anyway",true)
 		repeat wait() until RunDude == true
 	end
 end
@@ -792,7 +847,7 @@ if AntiCheat.RemoveScripts then
 			v:Destroy()
 		end
 	end
-	Stand("NugzyFE has to delete local scripts!","Your game may not work.","Explanation;","This game has an anticheat and our way of solving it is removing scripts.","","Run Anyway",true)
+	Stand("NugzyCMD has to delete local scripts!","Your game may not work.","Explanation;","This game has an anticheat and our way of solving it is removing scripts.","","Run Anyway",true)
 	repeat wait() until RunDude == true
 end
 
@@ -1065,7 +1120,7 @@ cmd.BorderSizePixel = 0
 cmd.Position = UDim2.new(-0, 0, 0, 0)
 cmd.Size = UDim2.new(0, 341, 0, 35)
 cmd.Font = Enum.Font.Code
-cmd.PlaceholderText = "CMD goes here"
+cmd.PlaceholderText = "Enter CMD here"
 cmd.Text = ""
 cmd.TextWrapped = true
 cmd.TextColor3 = Color3.fromRGB(255,255,255)
@@ -1142,7 +1197,7 @@ output4.TextSize = 16
 output4.TextXAlignment = Enum.TextXAlignment.Left
 output4.TextWrapped = true
 output4.TextTruncate = Enum.TextTruncate.AtEnd
-local Hints = {"Did you know you can execute multiple commands with ';;'?","Did you know you can create a wait using timedcmd in loops?","You can find commands using 'cmds'.","You can change your prefix by doing 'prefixnew (key)'","Did you know CMD-X was created in October 2019?"}
+local Hints = {"You can find commands using 'cmds'.","You can change your prefix by doing 'prefixnew (key)'"}
 output4.Text = Hints[math.random(1,#Hints)]
 
 output5.Name = "output5"
@@ -1795,7 +1850,7 @@ Save2.MouseButton1Down:Connect(function()
 	for _,v in pairs(Scrollinglogs:GetChildren()) do
 		writestats2 = writestats2.."\n"..v.Text
 	end
-	writefile("CMD-X Logs "..math.random(1000)..".txt",tostring(writestats2))
+	writefile("NugzyCMD Logs "..math.random(1000)..".txt",tostring(writestats2))
 end)
 
 function CreateLabel(Name, Text)
@@ -1905,7 +1960,7 @@ CMDS.commands = {
 	["friendjoin"] = "Joins your friends game.",
 	["support"] = "If you need support while using CMD-X use this command!",
 	["commands"] = "Shows this page.",
-	["advertise"] = "Help spread CMD-X by doing this cmd in game! (<3)",
+	["advertise"] = "Help spread NugzyCMD by doing this cmd in game! (<3)",
 	["unadvertise"] = "()",
 	["version"] = "Shows version.",
 	["walkspeed"] = "Sets your characters walkspeed.",
@@ -2196,7 +2251,7 @@ CMDS.commands = {
 	["bring"] = "Brings the player to you (NEED A HAT AND TOOL).",
 	["kill"] = "Kills the player (NEED A HAT AND TOOL).",
 	["give"] = "Gives the player your tool.",
-	["using"] = "Specifies that you are using CMD-X. <3",
+	["using"] = "Specifies that you are using NugzyCMD (In chat). <3",
 	["playercases"] = "Lists player cases you can use in your second argument.",
 	["coronavirus"] = "Provides information about coronavirus using an API.",
 	["joindateprivate"] = "Shows players join date privately.",
@@ -2443,7 +2498,7 @@ CMDS.commands = {
 	["nameesp"] = "Runs ESP with only names.",
 	["unnameesp"] = "()",
 	["spectatepart"] = "Views part.",
-	["rejoinexecute"] = "Rejoins and re-executes CMD-X once.",
+	["rejoinexecute"] = "Rejoins and re-executes NugzyCMD once.",
 	["multispam"] = "Spams strings seperated by commas.",
 	["logspam"] = "Spams any chat loggers without showing in chat.",
 	["unlogspam"] = "()",
@@ -2474,7 +2529,7 @@ CMDS.commands = {
 	["untransparentbubbles"] = "()",
 	["disableshiftlock"] = "()",
 	["robloxfromdiscordid"] = "Gets roblox account from discord id.",
-	["nilchatcmds"] = "Makes CMD-X chat commands not appear on chat.",
+	["nilchatcmds"] = "Makes NugzyCMD chat commands not appear on chat.",
 	["unnilchatcmds"] = "()",
 	["thirdperson"] = "Sets your camera to third person.",
 	["firstperson"] = "Sets your camera to first person.",
@@ -3380,7 +3435,7 @@ end
 task.spawn(suggestions_update)
 
 if KeepCMDXOn and syn.queue_on_teleport then
-	syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source"))()')
+	syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/source"))()')
 end
 
 rejoining = false
@@ -3820,9 +3875,9 @@ function opx(f,text)
 		end
 	else
 		if f == "*" then
-			sayremote:FireServer("[CMD-X] [*] "..text, "All")
+			sayremote:FireServer("[NugzyCMD] [*] "..text, "All")
 		elseif f == "-" then
-			sayremote:FireServer("[CMD-X] [-] "..text, "All")
+			sayremote:FireServer("[NugzyCMD] [-] "..text, "All")
 		end
 	end
 end
@@ -4155,7 +4210,7 @@ ManageTitleEnter.BackgroundTransparency = 1.000
 ManageTitleEnter.Position = UDim2.new(0.263266504, 0, 0.00765306223, 0)
 ManageTitleEnter.Size = UDim2.new(0, 200, 0, 32)
 ManageTitleEnter.Font = Enum.Font.GothamSemibold
-ManageTitleEnter.Text = "CMD-X EnterCMDs MANAGER"
+ManageTitleEnter.Text = "NugzyCMD - EnterCMDS - Porpmt "
 ManageTitleEnter.TextColor3 = Color3.fromRGB(255, 255, 255)
 ManageTitleEnter.TextSize = 14.000
 
@@ -4176,7 +4231,7 @@ Edit1Enter.Position = UDim2.new(0.0325581394, 0, 0.0850340128, 0)
 Edit1Enter.Size = UDim2.new(0, 200, 0, 26)
 Edit1Enter.Font = Enum.Font.Gotham
 Edit1Enter.PlaceholderColor3 = Color3.fromRGB(230, 230, 230)
-Edit1Enter.PlaceholderText = "Enter command here"
+Edit1Enter.PlaceholderText = "Enter commands or gay"
 Edit1Enter.Text = ""
 Edit1Enter.TextColor3 = Color3.fromRGB(255, 255, 255)
 Edit1Enter.TextSize = 14.000
@@ -4419,7 +4474,7 @@ local cmdAdvertise = false
 function useCommand.advertise()
 	cmdAdvertise = true
 	while cmdAdvertise do
-		local str = "Get CMD X today! Best admin GUI, supports paid executors! type in cmd-x on google!"
+		local str = "Get NugzyCMD today! Best admin GUI, supports paid executors!"
 		sayremote:FireServer(str, "All")
 		wait(math.random(1, 6)) 
 		local randomPlayer = cmdp:GetPlayers()[math.random(2,#cmdp:GetPlayers())]
@@ -4440,16 +4495,16 @@ function useCommand.advertise()
 		local randomPlayer = cmdp:GetPlayers()[math.random(2,#cmdp:GetPlayers())]
 		cmdlp.Character.Humanoid:MoveTo(randomPlayer.Character.HumanoidRootPart.Position)
 	end
-	opx("-","Now advertising CMD-X (Thank you!)")
+	opx("-","Now advertising NugzyCMD (Thank you!)")
 end
 
 function useCommand.unadvertise()
 	cmdAdvertise = false
-	opx("-","Stopped advertising CMD-X (Thank you!)")
+	opx("-","Stopped advertising NugzyCMD (Thank you!)")
 end
 
 function useCommand.version()
-	opx("-","CMD-X is currently on "..ver)
+	opx("-","NugzyCMD is currently on "..ver)
 end
 
 function useCommand.maxslopeangle()
@@ -4589,6 +4644,7 @@ function useCommand.removehands()
 		cmdlp.Character.LeftHand:Destroy()
 	else
 		opx("*","You need to be R15 for this command!")
+        opx("*","Join discord if you dont know what this is!")
 	end
 end
 
@@ -4599,6 +4655,7 @@ function useCommand.removefeet()
 		cmdlp.Character.LeftFoot:Destroy()
 	else
 		opx("*","You need to be R15 for this command!")
+        opx("*" , "Join discord if you dont know what this is")
 	end
 end
 
@@ -4695,6 +4752,7 @@ function useCommand.removelefthand()
 		cmdlp.Character.LeftHand:Destroy()
 	else
 		opx("*","You need to be R15 for this command!")
+        opx("*","Join discord if you dont know what this is")
 	end
 end
 
@@ -4704,6 +4762,7 @@ function useCommand.removerighthand()
 		cmdlp.Character.RightHand:Destroy()
 	else
 		opx("*","You need to be R15 for this command!")
+        opx("*","Join discord if you dont know what this is")
 	end
 end
 
@@ -4713,6 +4772,7 @@ function useCommand.removeleftfoot()
 		cmdlp.Character.LeftFoot:Destroy()
 	else
 		opx("*","You need to be R15 for this command!")
+        opx("*","Join discord if you dont know what this is ")
 	end
 end
 
@@ -4722,6 +4782,7 @@ function useCommand.removerightfoot()
 		cmdlp.Character.RightFoot:Destroy()
 	else
 		opx("*","You need to be R15 for this command!")
+        opx("*","Join discord if you dont know what this is")
 	end
 end
 
@@ -4731,6 +4792,7 @@ function useCommand.removerightlowerarm()
 		cmdlp.Character.RightLowerArm:Destroy()
 	else
 		opx("*","You need to be R15 for this command!")
+        opx("*","Join discord if you dont know what this is")
 	end
 end
 
@@ -4740,6 +4802,7 @@ function useCommand.removeleftlowerarm()
 		cmdlp.Character.LeftLowerArm:Destroy()
 	else
 		opx("*","You need to be R15 for this command!")
+        opx("*","Join discord if you dont know what this is")
 	end
 end
 
@@ -4749,6 +4812,7 @@ function useCommand.removerightlowerleg()
 		cmdlp.Character.RightLowerLeg:Destroy()
 	else
 		opx("*","You need to be R15 for this command!")
+        opx("*","Join discord if you dont know what this is")
 	end
 end
 
@@ -4758,6 +4822,7 @@ function useCommand.removeleftlowerleg()
 		cmdlp.Character.LeftLowerLeg:Destroy()
 	else
 		opx("*","You need to be R15 for this command!")
+        opx("*", "Join discord if you dont knowwhat this is ")
 	end
 end
 
@@ -7079,13 +7144,13 @@ function useCommand.remotespy()
 end
 
 function useCommand.playerstalker()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/projects/PlayerStalkerV2.lua",true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/PlayerStalker.lua",true))()
 	opx("-","Loaded PlayerStalker")
 end
 
 function useCommand.badger()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/others/badger.lua",true))()
-	opx("-","Loaded Badger V2")
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/badger.lua",true))()
+	opx("-","Loaded Badger")
 end
 
 function useCommand.explorer()
@@ -7459,17 +7524,17 @@ end
 function useCommand.resetsaves()
 	Confirm("Default","This will reset your stats and saves.")
 	if Confirmation then
-		opx("-","Successfully reset your CMD-X.")
-		if isfile("CMD-X.lua") then
-			delfile("CMD-X.lua")
+		opx("-","Successfully reset your NugzyCMD.")
+		if isfile("NugzyCMD.lua") then
+			delfile("NugzyCMD.lua")
 		end
 	end
 end
 
 function useCommand.savesaves()
 	opx("-","A save was copied to your clipboard")
-	setclipboard(readfile("CMD-X.lua"))
-	writefile("CMD-X.save",readfile("CMD-X.lua"))
+	setclipboard(readfile("NugzyCMD.lua"))
+	writefile("NugzyCMD.save",readfile("NugzyCMD.lua"))
 end
 
 function useCommand.migratesaves()
@@ -7478,16 +7543,16 @@ function useCommand.migratesaves()
 		if arguments[2] then
 			if isfile(arguments[2]) then
 				opx("-","Migrated "..arguments[2].." to current saves")
-				writefile("CMD-X.lua",readfile(arguments[2]))
+				writefile("NugzyCMD.lua",readfile(arguments[2]))
 			else
 				opx("*","You do not have a save by that name.")
 			end
 		else
-			if isfile("CMD-X.save") then
-				opx("-","Migrated CMD-X.save to current saves")
-				writefile("CMD-X.lua",readfile("CMD-X.save"))
+			if isfile("NugzyCMD.save") then
+				opx("-","Migrated NugzyCMD.save to current saves")
+				writefile("NugzyCMD.lua",readfile("NugzyCMD.save"))
 			else
-				opx("*","You do not have a CMD-X save.")
+				opx("*","You do not have a NugzyCMD save.")
 			end
 		end
 	end
@@ -7504,8 +7569,8 @@ function useCommand.fuckoff()
 end
 
 function useCommand.reload()
-	opx("-","Reloading CMD-X...")
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+	opx("-","Reloading NugzyCMD...")
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/source", true))()
 end
 
 function useCommand.partesp()
@@ -7573,7 +7638,7 @@ end
 function useCommand.messagebox()
 	if messageboxasync then
 		opx("-","Opened message box, "..getstring(2))
-		messageboxasync(getstring(2), "CMD-X Message", 262148)
+		messageboxasync(getstring(2), "NugzyCMD Message", 262148)
 	else
 		opx("*","Your exploit does not support messageboxes!")
 	end
@@ -7740,6 +7805,7 @@ function useCommand.audiolog()
 					end
 				else
 					opx("*","Something went wrong")
+                    opx("*","Please join discord and share the error")
 				end
 			end
 		else
@@ -8382,11 +8448,11 @@ function useCommand.runafter()
 		opx("-","CMD-X will now run after rejoin")
 		KeepCMDXOn = true
 		if KeepCMDXOn and syn.queue_on_teleport then
-			syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source"))()')
+			syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/source"))()')
 		end
 		updatesaves()
 	elseif arguments[2] == "off" then
-		opx("-","CMD-X will no longer run after rejoin")
+		opx("-","NugzyCMD will no longer run after rejoin")
 		KeepCMDXOn = false
 		updatesaves()
 	else
@@ -8862,7 +8928,7 @@ function BodyAimbot(aimbotarg)
 	if aimbotarg == "Team" then Teamed = true else Teamed = false end
 	local Hotkey = 50
 	AimbotIs = true
-	opx("-","Aimbot enabled (Hold down Left Ctrl to aim)")
+	opx("+","Aimbot enabled (Hold down Left Ctrl to aim)")
 	if AimbotRunAlready then return end
 	AimbotRunAlready = true
 	cmdm.KeyDown:connect(function(Key)
@@ -9696,7 +9762,7 @@ function useCommand.singinfo()
 	Step 5: Compress the lines to avoid whitespace errors\
 	Step 6: Put your compressed text into a raw data uploading site such as pastebin or hastebin\
 	Step 7: Insert the link into the sing command\
-	To see a sample of what to do, visit: https://raw.githubusercontent.com/CMD-X/CMD-X/master/others/sing/")
+	To see a sample of what to do, visit: https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/others/sing/")
 end
 
 stopSingMid = false
@@ -9715,7 +9781,7 @@ function useCommand.sing()
 		["diamonds"] = true
 	}
 	if check[string.lower(arguments[2])] then
-		getSong = "https://raw.githubusercontent.com/CMD-X/CMD-X/master/others/sing/"..string.lower(arguments[2])
+		getSong = "https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/sing/"..string.lower(arguments[2])
 	else
 		getSong = arguments[2]
 	end
@@ -9867,6 +9933,7 @@ end
 function useCommand.antiwrldsgui()
 	opx("-","antiwrldsGUI loading")
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CMD-X/CMD-X/master/others/antiwrldsgui/main.lua'),true))()
+    opx("*","Not currently working")
 	opx("-","antiwrldsGUI loaded")
 end
 
@@ -12526,7 +12593,10 @@ function useCommand.credits()
 	opxL("Credits","Note: Some discords may be out of date due to consistent changing;\
 	Owner - "..DevCords[1].."\
 	Dev - "..DevCords[2].."\
-	Former Founder - NugzyF\
+	Former Founder - pigeon\
+	Thank you to IY for some functions inside CMD-X\
+	Thank you to Bannable#5005 for animpack\
+	Thank you to 6033#6033 for old-aimbot")
 end
 
 function useCommand.outputlarger()
@@ -14423,7 +14493,7 @@ function useCommand.rejoinexecute()
 	syn.queue_on_teleport([[
 		game:GetService('ReplicatedFirst'):RemoveDefaultLoadingScreen()
 		repeat wait(.1) until game:GetService('Players').LocalPlayer
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/source", true))()
 	]])
 	opx("-","Rejoining game")
 	game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, game.JobId, cmdp)
@@ -14939,7 +15009,7 @@ function useCommand.rejoinrefreshexecute()
 			end)
 			playeradded:Disconnect()
 		end)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/source", true))()
 	]], c.X, c.Y, c.Z))
 	opx("-","Rejoining game")
 	game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, game.JobId, cmdp)

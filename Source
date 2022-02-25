@@ -8718,7 +8718,7 @@ function useCommand.thaw()
 	end
 end
 
-function useCommand.goto()
+function useCommand.gotoo()
 	if arguments[2] then
 		target = findplr(arguments[2])
 		if target then

@@ -16629,15 +16629,15 @@ Sound.SoundId = "rbxassetid://232127604"
 Sound:Play()
 game:GetService("StarterGui"):SetCore("SendNotification",{["Title"] = "Made by Nugzy",["Text"] = "Press "..Keybind.." to become change visibility.",["Duration"] = 20,["Button1"] = "Okay."})
 
+end
+
 function useCommand.visible2 ()
+	opx("*" , "Done!")
 
 	Keybind = "`"
 	IsInvisible = false
 
 end
-
-end
-
 function useCommand.drawingnew()
 	if newDrawing == Drawing then
 		opx("*", "Already using new drawing.")

@@ -1401,7 +1401,7 @@ opxviewertitle.BackgroundTransparency = 1
 opxviewertitle.Position = UDim2.new(0.264150947, 0, 0, 0)
 opxviewertitle.Size = UDim2.new(0, 200, 0, 22)
 opxviewertitle.Font = Enum.Font.GothamBold
-opxviewertitle.Text = "NugzyCMD OUTPUT-LONGER"
+opxviewertitle.Text = "CMD-X OUTPUT-LONGER"
 opxviewertitle.TextColor3 = Color3.new(1, 1, 1)
 opxviewertitle.TextSize = 14
 
@@ -4210,7 +4210,7 @@ ManageTitleEnter.BackgroundTransparency = 1.000
 ManageTitleEnter.Position = UDim2.new(0.263266504, 0, 0.00765306223, 0)
 ManageTitleEnter.Size = UDim2.new(0, 200, 0, 32)
 ManageTitleEnter.Font = Enum.Font.GothamSemibold
-ManageTitleEnter.Text = "NugzyCMD - EnterCMDS - Porpmt "
+ManageTitleEnter.Text = "CMD-X - EnterCMDS - Prompt "
 ManageTitleEnter.TextColor3 = Color3.fromRGB(255, 255, 255)
 ManageTitleEnter.TextSize = 14.000
 
@@ -7638,7 +7638,7 @@ end
 function useCommand.messagebox()
 	if messageboxasync then
 		opx("-","Opened message box, "..getstring(2))
-		messageboxasync(getstring(2), "NugzyCMD Message", 262148)
+		messageboxasync(getstring(2), "CMD-X Message", 262148)
 	else
 		opx("*","Your exploit does not support messageboxes!")
 	end
@@ -16521,7 +16521,7 @@ end
 
 for _,v in pairs(cmdp:GetPlayers()) do
 	if Devs[v.Name] then
-		opx("-",v.Name.." is in your server ("..Devs[v.Name].." of CMD-X)")
+		opx("-",v.Name.." is in your server ("..Devs[v.Name].." of NugzyCMD)")
 		RGBDev(v)
 	elseif Donors[v.Name] then
 		opx("-",v.Name.." is in your server ("..Tier[Donors[v.Name]].Tag..")")
@@ -16531,7 +16531,7 @@ end
 
 cmdp.PlayerAdded:Connect(function(v)
 	if Devs[v.Name] then
-		opx("-",v.Name.." is in your server ("..Devs[v.Name].." of CMD-X)")
+		opx("-",v.Name.." is in your server ("..Devs[v.Name].." of NugzyCMD)")
 		RGBDev(v)
 	elseif Donors[v.Name] then
 		opx("-",v.Name.." is in your server ("..Tier[Donors[v.Name]].Tag..")")

@@ -3435,7 +3435,7 @@ end
 task.spawn(suggestions_update)
 
 if KeepCMDXOn and syn.queue_on_teleport then
-	syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/source"))()')
+	syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/Source"))()')
 end
 
 rejoining = false
@@ -7570,7 +7570,7 @@ end
 
 function useCommand.reload()
 	opx("-","Reloading NugzyCMD...")
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/source", true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/Source", true))()
 end
 
 function useCommand.partesp()
@@ -8448,7 +8448,7 @@ function useCommand.runafter()
 		opx("-","CMD-X will now run after rejoin")
 		KeepCMDXOn = true
 		if KeepCMDXOn and syn.queue_on_teleport then
-			syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/source"))()')
+			syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/Source"))()')
 		end
 		updatesaves()
 	elseif arguments[2] == "off" then
@@ -14493,7 +14493,7 @@ function useCommand.rejoinexecute()
 	syn.queue_on_teleport([[
 		game:GetService('ReplicatedFirst'):RemoveDefaultLoadingScreen()
 		repeat wait(.1) until game:GetService('Players').LocalPlayer
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/source", true))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/Source", true))()
 	]])
 	opx("-","Rejoining game")
 	game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, game.JobId, cmdp)
@@ -15009,7 +15009,7 @@ function useCommand.rejoinrefreshexecute()
 			end)
 			playeradded:Disconnect()
 		end)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/source", true))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/NugzyF/FE-Nugzyadmin/master/Source", true))()
 	]], c.X, c.Y, c.Z))
 	opx("-","Rejoining game")
 	game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, game.JobId, cmdp)

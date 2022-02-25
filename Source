@@ -7047,6 +7047,17 @@ function useCommand.unspin()
 	end
 end
 
+function useCommand.fly()
+	FLYING = false
+
+	cmdlp.Character.Humanoid.PlatformStand = false
+	
+	wait()
+	opx ("-" , "You are now flying!")
+	sFLY()
+	speedofthefly = permflyspeed
+ end
+
 function useCommand.hatspin()
 	opx("-","Hats are now spinning")
 	for i,v in pairs(cmdlp.Character:GetChildren()) do
@@ -9763,16 +9774,7 @@ function useCommand ()
 		end)
 end
 
---function useCommand.fly()
-	--FLYING = false
 
-	--cmdlp.Character.Humanoid.PlatformStand = false
-	
-	--wait()
-	--opx ("-" , "You are now flying!")
-	--sFLY()
-	--speedofthefly = permflyspeed
---end
 
 function useCommand.vehiclefly()
 	FLYING = false

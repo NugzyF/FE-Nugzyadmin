@@ -2548,8 +2548,10 @@ CMDS.commands = {
 	["delalias"] = "Removes a custom alias",
 	["aliases"] = "Lists custom aliases",
 	["amogus"] = "makes yourself look sus",
+	["hamsterball"] = "check it out lol",
 }
 CMDS.usage = {
+	["hamsterball"] = "(meh)",
 	["amogus"] = "(meh)",
 	["promptnew"] = "(str/name)",
 	["prefixnew"] = "(str)",
